@@ -111,21 +111,28 @@ class DemoDataSeeder extends Seeder
         }
 
         $password = 'Demo@2026';
+
         $people = [
-            ['doctor', 'Rehan', 'Ali', 'Doctor'],
-            ['nurse', 'Nadia', 'Parveen', 'Nurse'],
-            ['reception', 'Front', 'Desk', 'Receptionist'],
-            ['accounts', 'Accounts', 'Office', 'Accountant'],
+            ['doctor', 'Arjun', 'Sharma', 'Doctor'],
+            ['nurse', 'Priya', 'Verma', 'Nurse'],
+            ['reception', 'Ritu', 'Gupta', 'Receptionist'],
+            ['accounts', 'Amit', 'Mehta', 'Accountant'],
         ];
+
         foreach ($people as [$login, $first, $last, $group]) {
             \App\Models\User::firstOrCreate(['login' => $login], [
-                'firstname' => $first, 'lastname' => $last, 'email' => $login . '@demo.icthospital.test',
-                'group' => $group, 'desc' => 'Demo login (' . strtolower($group) . ')',
+                'firstname' => $first,
+                'lastname' => $last,
+                'email' => $login . '@demo.icthospital.test',
+                'group' => $group,
+                'desc' => 'Demo login (' . strtolower($group) . ')',
                 'password' => \Illuminate\Support\Facades\Hash::make($password),
             ]);
         }
 
-        $this->command->info('Demo staff logins: doctor, nurse, reception, accounts (password ' . $password . ').');
+        $this->command->info(
+            'Demo staff logins: doctor, nurse, reception, accounts (password ' . $password . ').'
+        );
     }
 
     private function departments(): array
@@ -138,10 +145,15 @@ class DemoDataSeeder extends Seeder
         ];
 
         $made = [];
+
         foreach ($names as $name => $description) {
             $made[] = Department::firstOrCreate(
                 ['name' => $name],
-                ['description' => $description, 'x' => '', 'y' => '']
+                [
+                    'description' => $description,
+                    'x' => '',
+                    'y' => '',
+                ]
             );
         }
 
@@ -151,19 +163,29 @@ class DemoDataSeeder extends Seeder
     private function doctors(): array
     {
         $rows = [
-            ['Dr Sana Riaz', 'Cardiology', 'MBBS, FCPS Cardiology', '03001234501'],
-            ['Dr Imran Bashir', 'Orthopaedics', 'MBBS, MS Orthopaedics', '03001234502'],
-            ['Dr Ayesha Khan', 'Paediatrics', 'MBBS, DCH', '03001234503'],
-            ['Dr Rehan Ali', 'General Medicine', 'MBBS', '03001234504'],
+            ['Dr Ananya Sharma', 'Cardiology', 'MBBS, MD Cardiology', '09876543001'],
+            ['Dr Rajesh Verma', 'Orthopaedics', 'MBBS, MS Orthopaedics', '09876543002'],
+            ['Dr Neha Gupta', 'Paediatrics', 'MBBS, DCH', '09876543003'],
+            ['Dr Arjun Mehta', 'General Medicine', 'MBBS, MD Medicine', '09876543004'],
         ];
 
         $made = [];
+
         foreach ($rows as [$name, $department, $profile, $phone]) {
-            $made[] = Doctor::firstOrCreate(['name' => $name], [
-                'department' => $department, 'profile' => $profile, 'phone' => $phone,
-                'email' => '', 'address' => '', 'img_url' => '', 'x' => '', 'y' => '',
-                'ion_user_id' => '',
-            ]);
+            $made[] = Doctor::firstOrCreate(
+                ['name' => $name],
+                [
+                    'department' => $department,
+                    'profile' => $profile,
+                    'phone' => $phone,
+                    'email' => '',
+                    'address' => '',
+                    'img_url' => '',
+                    'x' => '',
+                    'y' => '',
+                    'ion_user_id' => '',
+                ]
+            );
         }
 
         return $made;
@@ -171,11 +193,25 @@ class DemoDataSeeder extends Seeder
 
     private function nurses(): void
     {
-        foreach ([['Nadia Parveen', '03011234501'], ['Saima Iqbal', '03011234502']] as [$name, $phone]) {
-            Nurse::firstOrCreate(['name' => $name], [
-                'phone' => $phone, 'email' => '', 'address' => '', 'img_url' => '',
-                'x' => '', 'y' => '', 'z' => '', 'ion_user_id' => '',
-            ]);
+        foreach (
+            [
+                ['Priya Verma', '09876543101'],
+                ['Kavita Singh', '09876543102'],
+            ] as [$name, $phone]
+        ) {
+            Nurse::firstOrCreate(
+                ['name' => $name],
+                [
+                    'phone' => $phone,
+                    'email' => '',
+                    'address' => '',
+                    'img_url' => '',
+                    'x' => '',
+                    'y' => '',
+                    'z' => '',
+                    'ion_user_id' => '',
+                ]
+            );
         }
     }
 
@@ -191,10 +227,16 @@ class DemoDataSeeder extends Seeder
         ];
 
         $made = [];
+
         foreach ($rows as [$name, $type, $price]) {
-            $made[] = PaymentCategory::firstOrCreate(['category' => $name], [
-                'type' => $type, 'c_price' => $price, 'description' => '',
-            ]);
+            $made[] = PaymentCategory::firstOrCreate(
+                ['category' => $name],
+                [
+                    'type' => $type,
+                    'c_price' => $price,
+                    'description' => '',
+                ]
+            );
         }
 
         return $made;
@@ -203,25 +245,35 @@ class DemoDataSeeder extends Seeder
     private function patients(array $doctors): array
     {
         $rows = [
-            ['Bilal Ahmed', 'male', '1979-04-12', 'O+', '03211234501', '14 Jinnah Road'],
-            ['Hina Malik', 'female', '1992-11-03', 'A+', '03211234502', '5 Model Town'],
-            ['Imran Shah', 'male', '1965-02-20', 'B+', '03211234503', '88 Canal View'],
-            ['Zara Yousaf', 'female', '2018-07-09', 'O-', '03211234504', '22 Gulberg'],
-            ['Farooq Nadeem', 'male', '1988-09-30', 'AB+', '03211234505', '9 Cantt'],
+            ['Rakesh Kumar', 'male', '1979-04-12', 'O+', '09876543201', '14 MG Road, Agra'],
+            ['Pooja Sharma', 'female', '1992-11-03', 'A+', '09876543202', '5 Kamla Nagar, Agra'],
+            ['Suresh Gupta', 'male', '1965-02-20', 'B+', '09876543203', '88 Sanjay Place, Agra'],
+            ['Aarav Singh', 'male', '2018-07-09', 'O-', '09876543204', '22 Sikandra, Agra'],
+            ['Vikram Singh', 'male', '1988-09-30', 'AB+', '09876543205', '9 Sadar Bazaar, Agra'],
         ];
 
         $made = [];
+
         foreach ($rows as $i => [$name, $sex, $birth, $blood, $phone, $address]) {
-            $made[] = Patient::firstOrCreate(['name' => $name], [
-                'patient_id' => str_pad((string) ($i + 1), 6, '0', STR_PAD_LEFT),
-                'sex' => $sex, 'birthdate' => $birth, 'bloodgroup' => $blood,
-                'age' => (string) \Carbon\Carbon::parse($birth)->age,
-                'phone' => $phone, 'address' => $address, 'email' => '',
-                'doctor' => $doctors[$i % count($doctors)]->name,
-                'img_url' => '', 'ion_user_id' => '', 'how_added' => 'demo data',
-                'add_date' => now()->subDays(30 - $i * 4)->toDateString(),
-                'registration_time' => now()->subDays(30 - $i * 4),
-            ]);
+            $made[] = Patient::firstOrCreate(
+                ['name' => $name],
+                [
+                    'patient_id' => str_pad((string) ($i + 1), 6, '0', STR_PAD_LEFT),
+                    'sex' => $sex,
+                    'birthdate' => $birth,
+                    'bloodgroup' => $blood,
+                    'age' => (string) \Carbon\Carbon::parse($birth)->age,
+                    'phone' => $phone,
+                    'address' => $address,
+                    'email' => '',
+                    'doctor' => $doctors[$i % count($doctors)]->name,
+                    'img_url' => '',
+                    'ion_user_id' => '',
+                    'how_added' => 'demo data',
+                    'add_date' => now()->subDays(30 - $i * 4)->toDateString(),
+                    'registration_time' => now()->subDays(30 - $i * 4),
+                ]
+            );
         }
 
         return $made;
@@ -254,7 +306,10 @@ class DemoDataSeeder extends Seeder
             $end = (clone $start)->addMinutes($minutes);
 
             Appointment::firstOrCreate(
-                ['doctor' => $doctors[$d]->id, 's_time' => $start->toDateTimeString()],
+                [
+                    'doctor' => $doctors[$d]->id,
+                    's_time' => $start->toDateTimeString(),
+                ],
                 [
                     'patient' => $patients[$p]->id,
                     'date' => $start->toDateString(),
@@ -263,10 +318,14 @@ class DemoDataSeeder extends Seeder
                     's_time_key' => $start->format('YmdHi'),
                     'status' => $status,
                     'remarks' => $remarks,
-                    'b_p' => $bp, 'pulse' => $pulse, 'temprature' => $temp, 'weight' => $weight,
+                    'b_p' => $bp,
+                    'pulse' => $pulse,
+                    'temprature' => $temp,
+                    'weight' => $weight,
                     'add_date' => now()->toDateString(),
                     'registration_time' => now()->toDateTimeString(),
-                    'user' => '', 'request' => '',
+                    'user' => '',
+                    'request' => '',
                 ]
             );
         }
@@ -283,8 +342,12 @@ class DemoDataSeeder extends Seeder
 
         foreach ($rows as [$index, $title, $description]) {
             $patient = $patients[$index];
+
             MedicalHistory::firstOrCreate(
-                ['patient_id' => $patient->id, 'title' => $title],
+                [
+                    'patient_id' => $patient->id,
+                    'title' => $title,
+                ],
                 [
                     'description' => $description,
                     'patient_name' => $patient->name,
@@ -300,42 +363,82 @@ class DemoDataSeeder extends Seeder
 
     private function wards(array $patients): void
     {
-        $general = BedCategory::firstOrCreate(['category' => 'General ward'], ['description' => 'Shared ward.']);
-        $private = BedCategory::firstOrCreate(['category' => 'Private room'], ['description' => 'Single occupancy.']);
+        $general = BedCategory::firstOrCreate(
+            ['category' => 'General ward'],
+            ['description' => 'Shared ward.']
+        );
+
+        $private = BedCategory::firstOrCreate(
+            ['category' => 'Private room'],
+            ['description' => 'Single occupancy.']
+        );
 
         $beds = [];
-        foreach ([['G1', $general], ['G2', $general], ['G3', $general], ['P1', $private], ['P2', $private]] as [$number, $category]) {
-            $beds[] = Bed::firstOrCreate(['number' => $number], [
-                'category' => $category->id, 'description' => '', 'status' => 'available',
-                'last_a_time' => null, 'last_d_time' => null, 'bed_id' => '',
-            ]);
+
+        foreach (
+            [
+                ['G1', $general],
+                ['G2', $general],
+                ['G3', $general],
+                ['P1', $private],
+                ['P2', $private],
+            ] as [$number, $category]
+        ) {
+            $beds[] = Bed::firstOrCreate(
+                ['number' => $number],
+                [
+                    'category' => $category->id,
+                    'description' => '',
+                    'status' => 'available',
+                    'last_a_time' => null,
+                    'last_d_time' => null,
+                    'bed_id' => '',
+                ]
+            );
         }
 
         // One patient currently admitted, one discharged last week, so occupancy has
         // both an open stay and a completed one to measure.
         if (! AllotedBed::where('patient', $patients[2]->id)->exists()) {
             AllotedBed::create([
-                'patient' => $patients[2]->id, 'bed_id' => $beds[0]->id,
-                'number' => $beds[0]->number, 'category' => $beds[0]->category,
-                'a_time' => now()->subDays(3), 'd_time' => null, 'status' => '', 'x' => '',
+                'patient' => $patients[2]->id,
+                'bed_id' => $beds[0]->id,
+                'number' => $beds[0]->number,
+                'category' => $beds[0]->category,
+                'a_time' => now()->subDays(3),
+                'd_time' => null,
+                'status' => '',
+                'x' => '',
             ]);
+
             $beds[0]->update(['status' => 'alloted']);
         }
 
         if (! AllotedBed::where('patient', $patients[0]->id)->exists()) {
             AllotedBed::create([
-                'patient' => $patients[0]->id, 'bed_id' => $beds[3]->id,
-                'number' => $beds[3]->number, 'category' => $beds[3]->category,
-                'a_time' => now()->subDays(11), 'd_time' => now()->subDays(7),
-                'status' => '', 'x' => '',
+                'patient' => $patients[0]->id,
+                'bed_id' => $beds[3]->id,
+                'number' => $beds[3]->number,
+                'category' => $beds[3]->category,
+                'a_time' => now()->subDays(11),
+                'd_time' => now()->subDays(7),
+                'status' => '',
+                'x' => '',
             ]);
         }
     }
 
     private function medicines(): array
     {
-        $tablets = MedicineCategory::firstOrCreate(['category' => 'Tablets'], ['description' => '']);
-        $syrups = MedicineCategory::firstOrCreate(['category' => 'Syrups'], ['description' => '']);
+        $tablets = MedicineCategory::firstOrCreate(
+            ['category' => 'Tablets'],
+            ['description' => '']
+        );
+
+        $syrups = MedicineCategory::firstOrCreate(
+            ['category' => 'Syrups'],
+            ['description' => '']
+        );
 
         // The legacy columns are price (what it cost) and s_price (what it sells
         // for). There is no b_price or description on this table.
@@ -348,14 +451,23 @@ class DemoDataSeeder extends Seeder
         ];
 
         $made = [];
+
         foreach ($rows as [$name, $category, $quantity, $sell, $buy, $generic]) {
-            $made[] = Medicine::firstOrCreate(['name' => $name], [
-                'category' => $category->id, 'quantity' => $quantity,
-                's_price' => $sell, 'price' => $buy, 'generic' => $generic,
-                'box' => '', 'company' => '', 'effects' => '',
-                'e_date' => now()->addYear()->toDateString(),
-                'add_date' => now()->toDateString(),
-            ]);
+            $made[] = Medicine::firstOrCreate(
+                ['name' => $name],
+                [
+                    'category' => $category->id,
+                    'quantity' => $quantity,
+                    's_price' => $sell,
+                    'price' => $buy,
+                    'generic' => $generic,
+                    'box' => '',
+                    'company' => '',
+                    'effects' => '',
+                    'e_date' => now()->addYear()->toDateString(),
+                    'add_date' => now()->toDateString(),
+                ]
+            );
         }
 
         return $made;
@@ -368,32 +480,56 @@ class DemoDataSeeder extends Seeder
         }
 
         $one = Prescription::create([
-            'patient' => $patients[0]->id, 'doctor' => $doctors[3]->id,
+            'patient' => $patients[0]->id,
+            'doctor' => $doctors[3]->id,
             'date' => now()->subDays(2)->toDateString(),
             'symptom' => 'Sore throat, fever three days',
             'advice' => 'Rest and fluids. Return if the fever passes 39C.',
-            'medicine' => '', 'note' => '', 'state' => '', 'dd' => '', 'validity' => '',
+            'medicine' => '',
+            'note' => '',
+            'state' => '',
+            'dd' => '',
+            'validity' => '',
         ]);
+
         PrescriptionMedicine::create([
-            'prescription_id' => $one->id, 'medicine_id' => $medicines[1]->id,
-            'name' => 'Paracetamol 500mg', 'dosage' => '1 tablet', 'duration' => '5 days',
+            'prescription_id' => $one->id,
+            'medicine_id' => $medicines[1]->id,
+            'name' => 'Paracetamol 500mg',
+            'dosage' => '1 tablet',
+            'duration' => '5 days',
             'instructions' => 'Three times a day after food',
         ]);
-        $one->update(['medicine' => 'Paracetamol 500mg (1 tablet, 5 days)']);
+
+        $one->update([
+            'medicine' => 'Paracetamol 500mg (1 tablet, 5 days)',
+        ]);
 
         $two = Prescription::create([
-            'patient' => $patients[2]->id, 'doctor' => $doctors[0]->id,
+            'patient' => $patients[2]->id,
+            'doctor' => $doctors[0]->id,
             'date' => now()->subDays(1)->toDateString(),
             'symptom' => 'Routine diabetic review',
             'advice' => 'Continue current dose. Review in three months.',
-            'medicine' => '', 'note' => '', 'state' => '', 'dd' => '', 'validity' => '',
+            'medicine' => '',
+            'note' => '',
+            'state' => '',
+            'dd' => '',
+            'validity' => '',
         ]);
+
         PrescriptionMedicine::create([
-            'prescription_id' => $two->id, 'medicine_id' => $medicines[2]->id,
-            'name' => 'Metformin 850mg', 'dosage' => '1 tablet', 'duration' => '90 days',
+            'prescription_id' => $two->id,
+            'medicine_id' => $medicines[2]->id,
+            'name' => 'Metformin 850mg',
+            'dosage' => '1 tablet',
+            'duration' => '90 days',
             'instructions' => 'Twice a day with meals',
         ]);
-        $two->update(['medicine' => 'Metformin 850mg (1 tablet, 90 days)']);
+
+        $two->update([
+            'medicine' => 'Metformin 850mg (1 tablet, 90 days)',
+        ]);
     }
 
     private function laboratory(array $patients, array $doctors): void
@@ -402,36 +538,72 @@ class DemoDataSeeder extends Seeder
             return;
         }
 
-        $hb = LabCategory::firstOrCreate(['category' => 'Haemoglobin'], [
-            'reference_value' => '13.5 to 17.5 g/dL', 'description' => '', 'procedure_id' => null,
-        ]);
-        $culture = LabCategory::firstOrCreate(['category' => 'Blood culture'], [
-            'reference_value' => 'No growth at 48 hours', 'description' => '', 'procedure_id' => null,
-        ]);
-        LabCategory::firstOrCreate(['category' => 'Fasting glucose'], [
-            'reference_value' => '70 to 100 mg/dL', 'description' => '', 'procedure_id' => null,
-        ]);
+        $hb = LabCategory::firstOrCreate(
+            ['category' => 'Haemoglobin'],
+            [
+                'reference_value' => '13.5 to 17.5 g/dL',
+                'description' => '',
+                'procedure_id' => null,
+            ]
+        );
+
+        $culture = LabCategory::firstOrCreate(
+            ['category' => 'Blood culture'],
+            [
+                'reference_value' => 'No growth at 48 hours',
+                'description' => '',
+                'procedure_id' => null,
+            ]
+        );
+
+        LabCategory::firstOrCreate(
+            ['category' => 'Fasting glucose'],
+            [
+                'reference_value' => '70 to 100 mg/dL',
+                'description' => '',
+                'procedure_id' => null,
+            ]
+        );
 
         // Part reported on purpose: the bloods are back, the culture is still growing.
         // That is the case the per test table exists to express.
         $lab = Lab::create([
-            'patient' => $patients[2]->id, 'doctor' => $doctors[0]->id,
-            'date' => now()->subDays(4)->toDateString(), 'status' => 'requested',
-            'patient_name' => $patients[2]->name, 'patient_phone' => $patients[2]->phone,
-            'patient_address' => $patients[2]->address, 'doctor_name' => $doctors[0]->name,
-            'category_name' => '', 'report' => '', 'user' => 'demo', 'date_string' => '',
-            'cnic' => '', 'token_no' => '', 'invoice_id' => null, 'report_date' => null,
+            'patient' => $patients[2]->id,
+            'doctor' => $doctors[0]->id,
+            'date' => now()->subDays(4)->toDateString(),
+            'status' => 'requested',
+            'patient_name' => $patients[2]->name,
+            'patient_phone' => $patients[2]->phone,
+            'patient_address' => $patients[2]->address,
+            'doctor_name' => $doctors[0]->name,
+            'category_name' => '',
+            'report' => '',
+            'user' => 'demo',
+            'date_string' => '',
+            'cnic' => '',
+            'token_no' => '',
+            'invoice_id' => null,
+            'report_date' => null,
         ]);
 
         LabTest::create([
-            'lab_id' => $lab->id, 'lab_category_id' => $hb->id, 'name' => 'Haemoglobin',
-            'reference_value' => '13.5 to 17.5 g/dL', 'result' => '12.8',
-            'status' => 'reported', 'reported_at' => now()->subDays(3),
+            'lab_id' => $lab->id,
+            'lab_category_id' => $hb->id,
+            'name' => 'Haemoglobin',
+            'reference_value' => '13.5 to 17.5 g/dL',
+            'result' => '12.8',
+            'status' => 'reported',
+            'reported_at' => now()->subDays(3),
         ]);
+
         LabTest::create([
-            'lab_id' => $lab->id, 'lab_category_id' => $culture->id, 'name' => 'Blood culture',
-            'reference_value' => 'No growth at 48 hours', 'result' => null,
-            'status' => 'requested', 'reported_at' => null,
+            'lab_id' => $lab->id,
+            'lab_category_id' => $culture->id,
+            'name' => 'Blood culture',
+            'reference_value' => 'No growth at 48 hours',
+            'result' => null,
+            'status' => 'requested',
+            'reported_at' => null,
         ]);
     }
 
@@ -443,17 +615,31 @@ class DemoDataSeeder extends Seeder
 
         $sale = PharmacyPayment::create([
             'date' => now()->subDays(1)->toDateString(),
-            'amount' => '60.00', 'discount' => '0.00', 'vat' => '0.00',
-            'gross_total' => '60.00', 'amount_received' => '60.00', 'status' => 'paid',
-            'patient' => null, 'doctor' => null, 'category' => null, 'category_name' => null,
-            'category_amount' => null, 'x_ray' => null, 'flat_vat' => null,
-            'flat_discount' => null, 'hospital_amount' => null, 'doctor_amount' => null,
+            'amount' => '60.00',
+            'discount' => '0.00',
+            'vat' => '0.00',
+            'gross_total' => '60.00',
+            'amount_received' => '60.00',
+            'status' => 'paid',
+            'patient' => null,
+            'doctor' => null,
+            'category' => null,
+            'category_name' => null,
+            'category_amount' => null,
+            'x_ray' => null,
+            'flat_vat' => null,
+            'flat_discount' => null,
+            'hospital_amount' => null,
+            'doctor_amount' => null,
         ]);
 
         PharmacySaleItem::create([
-            'pharmacy_payment_id' => $sale->id, 'medicine_id' => $medicines[1]->id,
-            'name' => 'Paracetamol 500mg', 'quantity' => 12,
-            'unit_price' => '5.00', 'line_total' => '60.00',
+            'pharmacy_payment_id' => $sale->id,
+            'medicine_id' => $medicines[1]->id,
+            'name' => 'Paracetamol 500mg',
+            'quantity' => 12,
+            'unit_price' => '5.00',
+            'line_total' => '60.00',
         ]);
 
         $medicines[1]->decrement('quantity', 12);
@@ -468,31 +654,54 @@ class DemoDataSeeder extends Seeder
         // Part paid, so the debtor report and the settlement state both have
         // something real to show.
         $invoice = Payment::create([
-            'patient' => $patients[2]->id, 'doctor' => $doctors[0]->id,
+            'patient' => $patients[2]->id,
+            'doctor' => $doctors[0]->id,
             'date' => now()->subDays(12)->toDateString(),
-            'amount' => '15000.00', 'discount' => '0.00', 'vat' => '0.00',
-            'gross_total' => '15000.00', 'amount_received' => '5000.00',
-            'status' => 'part paid', 'patient_name' => $patients[2]->name,
-            'doctor_name' => $doctors[0]->name, 'category' => null, 'category_name' => null,
-            'category_amount' => null, 'x_ray' => null, 'flat_vat' => null,
-            'flat_discount' => null, 'hospital_amount' => null, 'doctor_amount' => null,
-            'deposit_type' => null, 'remarks' => 'Admission, three nights.', 'user' => 'demo',
+            'amount' => '15000.00',
+            'discount' => '0.00',
+            'vat' => '0.00',
+            'gross_total' => '15000.00',
+            'amount_received' => '5000.00',
+            'status' => 'part paid',
+            'patient_name' => $patients[2]->name,
+            'doctor_name' => $doctors[0]->name,
+            'category' => null,
+            'category_name' => null,
+            'category_amount' => null,
+            'x_ray' => null,
+            'flat_vat' => null,
+            'flat_discount' => null,
+            'hospital_amount' => null,
+            'doctor_amount' => null,
+            'deposit_type' => null,
+            'remarks' => 'Admission, three nights.',
+            'user' => 'demo',
             'date_string' => '',
         ]);
 
         InvoiceItem::create([
-            'payment_id' => $invoice->id, 'payment_category_id' => $services[1]->id,
-            'name' => 'Consultation, specialist', 'quantity' => 1,
-            'unit_price' => '3000.00', 'line_total' => '3000.00',
+            'payment_id' => $invoice->id,
+            'payment_category_id' => $services[1]->id,
+            'name' => 'Consultation, specialist',
+            'quantity' => 1,
+            'unit_price' => '3000.00',
+            'line_total' => '3000.00',
         ]);
+
         InvoiceItem::create([
-            'payment_id' => $invoice->id, 'payment_category_id' => $services[3]->id,
-            'name' => 'Ward bed, per day', 'quantity' => 3,
-            'unit_price' => '4000.00', 'line_total' => '12000.00',
+            'payment_id' => $invoice->id,
+            'payment_category_id' => $services[3]->id,
+            'name' => 'Ward bed, per day',
+            'quantity' => 3,
+            'unit_price' => '4000.00',
+            'line_total' => '12000.00',
         ]);
+
         InvoicePayment::create([
-            'payment_id' => $invoice->id, 'amount' => '5000.00',
-            'method' => 'cash', 'reference' => 'Deposit on admission',
+            'payment_id' => $invoice->id,
+            'amount' => '5000.00',
+            'method' => 'cash',
+            'reference' => 'Deposit on admission',
             'paid_at' => now()->subDays(12),
         ]);
     }
