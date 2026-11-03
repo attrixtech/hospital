@@ -2,15 +2,11 @@
 <html lang="en">
 <head>
     {{--
-      ICTHospital sign-in page (2026 design). Same form contract as before: POST users/login
+      Hospital Mitra sign-in page (2026 design). Same form contract as before: POST users/login
       with login + password, the CSRF token, the flash message and $error.
-
-      Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-      Part of ICTHospital <https://www.icthospital.com>
-      Licensed under the GNU General Public License v3.0.
     --}}
     <meta charset="utf-8">
-    <title>Sign in · {{ $institute->name ?? 'ICTHospital' }}</title>
+    <title>Sign in · {{ $institute->name ?? 'Hospital Mitra' }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
     <link rel="icon" type="image/svg+xml" href="{{ asset('img/brand/icthospital-mark.svg') }}">
@@ -58,7 +54,7 @@
 <body>
 <div class="ih-login">
     <aside class="ih-side">
-        <img src="{{ asset('img/brand/icthospital-logo-white.svg') }}" alt="ICTHospital">
+        <img src="{{ asset('img/brand/icthospital-logo-white.svg') }}" alt="Hospital Mitra">
         <div style="position:relative;z-index:1">
             <h1>Run your hospital from one place.</h1>
             <p>Patients, appointments, wards, pharmacy, laboratory and billing, with the front desk and the doctors on the same record.</p>
@@ -68,14 +64,14 @@
                 <li><i class="fas fa-file-invoice-dollar"></i> Billing, cash closing and doctor share</li>
             </ul>
         </div>
-        <small>ICTHospital by ICT Innovations</small>
+        <small>Hospital Mitra by Attrix Technologies & Infusionn Pvt. Ltd.</small>
     </aside>
 
     <main class="ih-main">
         <div class="ih-card">
-            <img class="ih-mobile-logo" src="{{ asset('img/brand/icthospital-logo.svg') }}" alt="ICTHospital">
+            <img class="ih-mobile-logo" src="{{ asset('img/brand/icthospital-logo.svg') }}" alt="Hospital Mitra">
             <h2>Sign in</h2>
-            <p class="ih-sub">Welcome to {{ $institute->name ?? 'ICTHospital' }}. Use your staff account.</p>
+            <p class="ih-sub">Welcome to {{ $institute->name ?? 'Hospital Mitra' }}. Use your staff account.</p>
 
             @if (Session::get('message'))
                 <div class="ih-alert ok"><i class="fas fa-check-circle"></i><span>{{ Session::get('message') }}</span></div>
@@ -101,7 +97,8 @@
                 <button type="submit" class="ih-btn">Sign in</button>
             </form>
 
-            <div class="ih-foot">&copy; {{ date('Y') }} {{ $institute->name ?? 'ICTHospital' }} · Developed by <a href="https://www.ictinnovations.com/" target="_blank" rel="noopener">ICT Innovations</a></div>
+            <div class="ih-foot">&copy; {{ date('Y') }} {{ $institute->name ?? 'Hospital Mitra' }} · Developed by <a href="https://www.attrixtech.com" target="_blank" rel="noopener">Attrix Technologies</a> &
+                <a href="https://infusionn.in">Infusionn Pvt. Ltd.</a></div>
         </div>
     </main>
 </div>
