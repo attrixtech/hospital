@@ -1,4 +1,4 @@
-<?php 
+<?php
 use App\Http\Controllers\InstituteController;
 use App\Http\Controllers\PermissionController;
 $get_grad = new InstituteController;
@@ -10,7 +10,7 @@ foreach($permissions as $permission){
 $permision[] = $permission->permission_name;
 }
 ?>
-<?php //echo "<pre>";print_r($permision); 
+<?php //echo "<pre>";print_r($permision);
 //exit;
 ?>
 <!DOCTYPE html>
@@ -32,7 +32,7 @@ $permision[] = $permission->permission_name;
         ===
     -->
     <meta charset="utf-8">
-    <title>@if(Session::get('inName')=='') ICTHospital @else {{Session::get('inName')}} @endif</title>
+    <title>@if(Session::get('inName')=='') Hospital Mitra @else {{Session::get('inName')}} @endif</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}" />
 
@@ -57,7 +57,7 @@ window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.ke
 
     <!-- Bootstrap CSS-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all">
-   
+
     <link href="{{ URL::asset('/assets/vendor/bootstrap-4.1/bootstrap.css')}}" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
@@ -78,11 +78,10 @@ window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.ke
 
     <link href='https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css' rel='stylesheet'>
 
-    
+
 
 
     <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="{{ asset('img/brand/icthospital-mark.svg') }}">
     <link rel="apple-touch-icon" href="{{ asset('img/brand/favicon-180.png') }}">
     {{--<link href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css' rel='stylesheet'>--}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -107,32 +106,32 @@ window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.ke
 
 .dataTables_wrapper .dataTables_paginate .paginate_button {
     padding: 3px !important;
-   
+
 }
-.paginate_button.next  {       
+.paginate_button.next  {
       background: rgba(0, 0, 0, 0) url("./next1.gif") no-repeat scroll right center;
  }
- .paginate_button.next.disabled  {       
+ .paginate_button.next.disabled  {
       background: rgba(0, 0, 0, 0) url("./next0.gif") no-repeat scroll right center !important;
  }
- 
- .paginate_button.first  {       
+
+ .paginate_button.first  {
       background: rgba(0, 0, 0, 0) url("first1.gif") no-repeat scroll right center;
  }
- 
- .paginate_button.first.disabled  {       
+
+ .paginate_button.first.disabled  {
       background: rgba(0, 0, 0, 0) url("first0.gif") no-repeat scroll right center !important;
  }
- 
- .paginate_button.last  {       
+
+ .paginate_button.last  {
       background: rgba(0, 0, 0, 0) url("last1.gif") no-repeat scroll right center;
  }
- 
- .paginate_button.last.disabled  {       
+
+ .paginate_button.last.disabled  {
       background: rgba(0, 0, 0, 0) url("last0.gif") no-repeat scroll right center !important;
  }
- 
-.paginate_button.previous  {         
+
+.paginate_button.previous  {
       background: rgba(0, 0, 0, 0) url("prev1.gif") no-repeat scroll right center;
  }
 
@@ -281,7 +280,7 @@ user-select: none !important;
     background: #fa4251;
 }
 table i{
-  
+
   font-size: 20px;
 }
 
@@ -297,7 +296,7 @@ table i{
 .dataTables_filter{
 
     float: right !important;
-    
+
 }
 
 .notifi-dropdown {
@@ -343,7 +342,7 @@ table i {
     <!-- favicon links are in the head above -->
     <link href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css" rel="stylesheet">
 
-  {{-- ICTHospital: keep the content clear of the fixed sidebar.
+  {{-- keep the content clear of the fixed sidebar.
 
        theme.css offsets .page-container2 by the sidebar width, but @yield('content')
        renders inside .main-content, which is in a different branch of this layout and
@@ -382,7 +381,7 @@ table i {
       <aside class="menu-sidebar2 d-none d-lg-block">
         <!-- END HEADER MOBILE-->
         {{-- @yield('sidebarmenu') --}}
-        @include('layouts.sidebarmenu') 
+        @include('layouts.sidebarmenu')
 
         </ul>
         </nav>
@@ -483,7 +482,7 @@ table i {
                                 </div>
                               </div>
                             <div class="header-button2">
-                                
+
                                 {{--<div class="header-button-item has-noti js-item-menu">
                                     <i class="zmdi zmdi-notifications"></i>
                                     <div class="notifi-dropdown js-dropdown">
@@ -529,24 +528,24 @@ table i {
                                     <div class="account-dropdown__body">
                                         <div class="account-dropdown__item">
                                            <span class="hidden-sm hidden-xs" style="text-align: center;margin-left: 35px;"> {{Session::get('name')}}</span>
-                                            
-                                        </div> 
+
+                                        </div>
                                         <div class="account-dropdown__item">
                                             <a  class="" href="{{url('/settings')}}">
                                                 <i class="zmdi zmdi-account"></i>Profile
                                             </a>
                                         </div>
-                                        
+
                                         <?php /* <div class="account-dropdown__item ScrollStyle" style="overflow-y: auto;">
-                                                
+
                                                  @if (Session::get('userRole')=="Admin")
                                                     <li class="has-sub" style="list-style-type: none;">
                                                       <a  class="js-arrow {{ Request::is('academicYear', 'gpa', 'users', 'holidays', 'class-off', 'institute', 'ictcore?type=sms', 'ictcore?type=voice','notification_type','ictcore/attendance','permission') ? 'open' : '' }}" href="#">
                                                         <i class="glyphicon glyphicon-cog"></i>
                                                          Settings
                                                         {{--<span class="arrow {{ Request::is('academicYear', 'gpa', 'users', 'holidays', 'class-off', 'institute', 'ictcore?type=sms', 'ictcore?type=voice','notification_type','ictcore/attendance','permission') ? 'up' : '' }}">
-                                                          <i class="fas fa-angle-down"></i> 
-                                                        </span> --}}                           
+                                                          <i class="fas fa-angle-down"></i>
+                                                        </span> --}}
                                                       </a>
                                                       <ul class="list-unstyled navbar__sub-list js-sub-list" style="display:{{ Request::is('academicYear', 'gpa', 'users', 'holidays', 'class-off', 'institute', 'ictcore?type=sms', 'ictcore?type=voice','notification_type','ictcore/attendance','permission') ? 'block' : 'none' }} ;">
                                                         <li class="{{ Request::is('academicYear') ? 'active' : '' }}"><a href="{{url('/academicYear')}}">Academic Year</a></li>
@@ -562,7 +561,7 @@ table i {
                                                         <li class="{{ Request::is('permission') ? 'active' : '' }}"><a href="{{url('/permission')}}">Permission</a></li>
                                                           @if(accounting_check()!='' && accounting_check()=='yes' )
                                                             <li class="{{ Request::is('accounting') ? 'active' : '' }}"><a href="{{url('/accounting')}}">Accounting Api</a></li>
-                                                          @endif 
+                                                          @endif
                                                       </ul>
                                                     </li>
                                                     @endif
@@ -605,16 +604,16 @@ table i {
 
             <!-- MObile menue -->
             <aside class="menu-sidebar2 js-right-sidebar d-block d-lg-none">
-              
-                @include('layouts.sidebarmenu') 
+
+                @include('layouts.sidebarmenu')
 
                {{-- <li class="has-sub">
                       <a  class="js-arrow {{ Request::is('academicYear', 'gpa', 'users', 'holidays', 'class-off', 'institute', 'ictcore?type=sms', 'ictcore?type=voice','notification_type','ictcore/attendance','permission','accounting') ? 'open' : '' }}" href="#">
                         <i class="glyphicon glyphicon-cog"></i>
-                         Settings 
+                         Settings
                         <span class="arrow {{ Request::is('academicYear', 'gpa', 'users', 'holidays', 'class-off', 'institute', 'ictcore?type=sms', 'ictcore?type=voice','notification_type','ictcore/attendance','permission','accounting') ? 'up' : '' }}">
-                          <i class="fas fa-angle-down"></i> 
-                        </span>                            
+                          <i class="fas fa-angle-down"></i>
+                        </span>
                       </a>
                       <ul class="list-unstyled navbar__sub-list js-sub-list" style="display:{{ Request::is('academicYear', 'gpa', 'users', 'holidays', 'class-off', 'institute', 'ictcore?type=sms', 'ictcore?type=voice','notification_type','ictcore/attendance','permission','accounting') ? 'block' : 'none' }} ;">
                         <li class="{{ Request::is('academicYear') ? 'active' : '' }}"><a href="{{url('/academicYear')}}">Academic Year</a></li>
@@ -630,7 +629,7 @@ table i {
                         <li class="{{ Request::is('permission') ? 'active' : '' }}"><a href="{{url('/permission')}}">Permission</a></li>
                         @if(accounting_check()!='' && accounting_check()=='yes' )
                         <li class="{{ Request::is('accounting') ? 'active' : '' }}"><a href="{{url('/accounting')}}">Accounting Api</a></li>
-                        @endif 
+                        @endif
                       </ul>
                     </li>--}}
 
@@ -640,7 +639,7 @@ table i {
             </aside>
             <!-- END Mobile menu-->
             <!-- END HEADER DESKTOP-->
-        
+
 
         <!-- MAIN CONTENT-->
             <div class="main-content">
@@ -694,7 +693,7 @@ table i {
                   </div>
             </div>
    </div>
-                        
+
 </div>
 
 @yield('model')
@@ -705,7 +704,7 @@ table i {
 --}}
     <script src="{{ URL::asset('/assets/vendor/bootstrap-4.1/popper.min.js')}}"></script>
     <script src="{{ URL::asset('/assets/vendor/bootstrap-4.1/bootstrap.min.js')}}"></script>
-    
+
     <!-- library for cookie management -->
     <script src="{{ URL::asset('/js/jquery.cookie.js') }}"></script>
 
@@ -733,7 +732,7 @@ table i {
     <script src="{{ URL::asset('/assets/vendor/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
     <script src="{{ URL::asset('/assets/vendor/chartjs/Chart.bundle.min.js')}}"></script>
     </script>
-    
+
     <!-- calender plugin -->
     <script src="{{ URL::asset('/bower_components/moment/min/moment.min.js') }}"></script>
     <script src='{{ URL::asset('/bower_components/fullcalendar/dist/fullcalendar.min.js') }}'></script>

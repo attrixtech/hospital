@@ -1,5 +1,5 @@
 {{--
-  ICTHospital - main navigation.
+  main navigation.
 
   Every entry here points at a route that exists. The menu this replaces was the
   ICTSchool one: students, teachers, classes, sections, exams, marks, GPA rules,
@@ -9,10 +9,6 @@
 
   Hospital modules still being built (patients, appointments, wards, pharmacy,
   laboratory) will be added here as their controllers land.
-
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
-  Licensed under the GNU General Public License v3.0.
 --}}
 <?php
 $here = request()->path();

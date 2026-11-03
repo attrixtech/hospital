@@ -9,7 +9,6 @@
     <title>Sign in · {{ $institute->name ?? 'Hospital Mitra' }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="{{ asset('img/brand/icthospital-mark.svg') }}">
     <link rel="apple-touch-icon" href="{{ asset('img/brand/favicon-180.png') }}">
     <link href="{{ asset('assets/vendor/fontawesome-5.15/css/all.min.css') }}" rel="stylesheet">
     <style>
@@ -54,7 +53,6 @@
 <body>
 <div class="ih-login">
     <aside class="ih-side">
-        <img src="{{ asset('img/brand/icthospital-logo-white.svg') }}" alt="Hospital Mitra">
         <div style="position:relative;z-index:1">
             <h1>Run your hospital from one place.</h1>
             <p>Patients, appointments, wards, pharmacy, laboratory and billing, with the front desk and the doctors on the same record.</p>
@@ -69,7 +67,6 @@
 
     <main class="ih-main">
         <div class="ih-card">
-            <img class="ih-mobile-logo" src="{{ asset('img/brand/icthospital-logo.svg') }}" alt="Hospital Mitra">
             <h2>Sign in</h2>
             <p class="ih-sub">Welcome to {{ $institute->name ?? 'Hospital Mitra' }}. Use your staff account.</p>
 
