@@ -41,6 +41,11 @@
         .ih-alert { border-radius: 10px; padding: 12px 14px; font-size: 14px; margin-bottom: 18px; display: flex; gap: 10px; align-items: flex-start; }
         .ih-alert.ok { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
         .ih-alert.err { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+        .ih-roles { margin-top: 22px; padding-top: 18px; border-top: 1px solid #e2e8f0; }
+        .ih-roles-label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: #64748b; margin: 0 0 10px; }
+        .ih-roles-list { display: flex; flex-wrap: wrap; gap: 8px; }
+        .ih-role-link { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; border: 1px solid #cbd5e1; background: #fff; color: #0f766e; font-size: 13px; font-weight: 600; text-decoration: none; cursor: pointer; transition: background .15s, border-color .15s, color .15s; }
+        .ih-role-link:hover, .ih-role-link:focus { background: #0f766e; border-color: #0f766e; color: #fff; }
         .ih-foot { margin-top: 32px; color: #94a3b8; font-size: 13px; text-align: center; }
         .ih-foot a { color: #64748b; text-decoration: none; }
         @media (max-width: 900px) {
@@ -91,13 +96,34 @@
                         <input type="password" id="password" name="password" placeholder="Password" autocomplete="current-password" required>
                     </div>
                 </div>
-                <button type="submit" class="ih-btn">Sign in</button>
+                <button type="submit" id="login-submit" class="ih-btn">Sign in</button>
             </form>
+
+            <div class="ih-roles">
+                <p class="ih-roles-label">Quick Sign In</p>
+                <div class="ih-roles-list">
+                    <a href="#" class="ih-role-link" data-login="admin" data-password="123456"><i class="fas fa-user-shield"></i> Admin</a>
+                    <a href="#" class="ih-role-link" data-login="doctor" data-password="Demo@2026"><i class="fas fa-user-md"></i> Doctor</a>
+                    <a href="#" class="ih-role-link" data-login="nurse" data-password="Demo@2026"><i class="fas fa-user-nurse"></i> Nurse</a>
+                    <a href="#" class="ih-role-link" data-login="reception" data-password="Demo@2026"><i class="fas fa-concierge-bell"></i> Receptionist</a>
+                    <a href="#" class="ih-role-link" data-login="accounts" data-password="Demo@2026"><i class="fas fa-file-invoice-dollar"></i> Accountant</a>
+                </div>
+            </div>
 
             <div class="ih-foot">&copy; {{ date('Y') }} {{ $institute->name ?? 'thrumble.hospital' }} · Developed by <a href="https://www.attrixtech.com" target="_blank" rel="noopener">Attrix Technologies</a> &amp;
                 <a href="https://www.infusionn.in" target="_blank" rel="noopener">Infusionn Pvt. Ltd.</a></div>
         </div>
     </main>
 </div>
+<script>
+document.querySelectorAll('.ih-role-link').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.getElementById('login').value = this.dataset.login;
+        document.getElementById('password').value = this.dataset.password;
+        document.getElementById('login-submit').click();
+    });
+});
+</script>
 </body>
 </html>
