@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     {{--
-      Hospital Mitra sign-in page (2026 design). Same form contract as before: POST users/login
+      thrumble.hospital sign-in page (2026 design). Same form contract as before: POST users/login
       with login + password, the CSRF token, the flash message and $error.
     --}}
     <meta charset="utf-8">
-    <title>Sign in · {{ $institute->name ?? 'Hospital Mitra' }}</title>
+    <title>Sign in · {{ $institute->name ?? 'thrumble.hospital' }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
     <link rel="apple-touch-icon" href="{{ asset('img/brand/favicon-180.png') }}">
@@ -62,13 +62,13 @@
                 <li><i class="fas fa-file-invoice-dollar"></i> Billing, cash closing and doctor share</li>
             </ul>
         </div>
-        <small>Hospital Mitra by Attrix Technologies & Infusionn Pvt. Ltd.</small>
+        <small>thrumble.hospital by Attrix Technologies &amp; Infusionn Pvt. Ltd.</small>
     </aside>
 
     <main class="ih-main">
         <div class="ih-card">
             <h2>Sign in</h2>
-            <p class="ih-sub">Welcome to {{ $institute->name ?? 'Hospital Mitra' }}. Use your staff account.</p>
+            <p class="ih-sub">Welcome to {{ $institute->name ?? 'thrumble.hospital' }}. Use your staff account.</p>
 
             @if (Session::get('message'))
                 <div class="ih-alert ok"><i class="fas fa-check-circle"></i><span>{{ Session::get('message') }}</span></div>
@@ -94,8 +94,8 @@
                 <button type="submit" class="ih-btn">Sign in</button>
             </form>
 
-            <div class="ih-foot">&copy; {{ date('Y') }} {{ $institute->name ?? 'Hospital Mitra' }} · Developed by <a href="https://www.attrixtech.com" target="_blank" rel="noopener">Attrix Technologies</a> &
-                <a href="https://infusionn.in">Infusionn Pvt. Ltd.</a></div>
+            <div class="ih-foot">&copy; {{ date('Y') }} {{ $institute->name ?? 'thrumble.hospital' }} · Developed by <a href="https://www.attrixtech.com" target="_blank" rel="noopener">Attrix Technologies</a> &amp;
+                <a href="https://www.infusionn.in" target="_blank" rel="noopener">Infusionn Pvt. Ltd.</a></div>
         </div>
     </main>
 </div>

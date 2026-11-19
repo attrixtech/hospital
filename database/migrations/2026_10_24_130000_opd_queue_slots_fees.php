@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - OPD token queue, doctor booking slots and visit fees.
+ * thrumble.hospital - OPD token queue, doctor booking slots and visit fees.
  *
  * An outpatient clinic runs on tokens: the patient checks in at the desk, gets the
  * next number for that doctor, waits, is called in and leaves. The waiting time and
@@ -11,8 +11,8 @@
  * hours or on a day the doctor is away. Visit fees say what a first visit, a
  * follow-up or an emergency visit costs with each doctor.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

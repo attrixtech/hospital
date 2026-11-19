@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the branch the signed in user is working at.
+ * thrumble.hospital - the branch the signed in user is working at.
  *
  * A user tied to a branch always works there. A user with no branch (usually an
  * administrator) works across all branches, or picks one from the top bar for the
@@ -8,8 +8,8 @@
  *
  * Records written before branches existed have no branch and show everywhere.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

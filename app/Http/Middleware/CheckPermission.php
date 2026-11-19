@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - route level permission check.
+ * thrumble.hospital - route level permission check.
  *
  * Three things were wrong with the version this replaces. It read
  * Auth::user()->group without checking anyone was signed in, so an unauthenticated
@@ -10,8 +10,8 @@
  * query per call, which on a screen behind several checks meant several identical
  * queries.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

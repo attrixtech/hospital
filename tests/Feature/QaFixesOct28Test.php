@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - fixes from the 28 October 2026 QA round.
+ * thrumble.hospital - fixes from the 28 October 2026 QA round.
  *
  * Pricing back to the list price, a printable invoice, tokens for visits marked arrived
  * from any screen, duplicate patients, no bookings in the past, and one visit fee per
  * doctor, visit type and shift.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

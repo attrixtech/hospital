@@ -1,12 +1,12 @@
 {{--
-  ICTHospital - patient chart, shown under the patient's details.
+  thrumble.hospital - patient chart, shown under the patient's details.
 
   Everything recorded against one patient, newest first, each read from the module
   that owns it: history notes, OPD visits with vitals, prescriptions, lab results,
   ward stays and billing. Each section links to that module for adding or editing.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 @php($imaging = \App\Models\RadiologyOrder::where('patient_id', $patient->id)->orderByDesc('created_at')->get())

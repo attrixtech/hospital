@@ -1,12 +1,12 @@
 <?php
 /**
- * ICTHospital - laboratory feature tests.
+ * thrumble.hospital - laboratory feature tests.
  *
  * The derived status and the part reported state are the reason the module was
  * built this way, so most of these check those.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

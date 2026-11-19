@@ -1,12 +1,12 @@
 {{--
-  ICTHospital - bed occupancy over a date range.
+  thrumble.hospital - bed occupancy over a date range.
 
   The per day bar is drawn with a plain div rather than a charting library,
   because adding a JavaScript dependency for one horizontal bar is not worth the
   page weight or the supply chain.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

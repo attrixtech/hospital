@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - bring the legacy schema up to something a database can enforce.
+ * thrumble.hospital - bring the legacy schema up to something a database can enforce.
  *
  * The schema was carried over faithfully from the original hospital application,
  * which stored dates as varchar(100) and every relationship as a loose varchar
@@ -21,8 +21,8 @@
  * Nothing here deletes a row or rewrites a value it cannot read. Run the report
  * first, fix the data it complains about, then apply.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

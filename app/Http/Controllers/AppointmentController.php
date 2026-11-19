@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - appointment booking.
+ * thrumble.hospital - appointment booking.
  *
  * The appointment table and model came across in the rebuild and the
  * hospital:appointment-reminder cron already reads them, but nothing could
@@ -10,8 +10,8 @@
  * hold two appointments that overlap. The CodeIgniter version booked whatever it
  * was given and left the clash for the front desk to discover on the day.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

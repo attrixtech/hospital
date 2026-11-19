@@ -1,11 +1,11 @@
 {{--
-  ICTHospital - shown when a role is not granted the permission a screen needs.
+  thrumble.hospital - shown when a role is not granted the permission a screen needs.
 
   The middleware used to redirect to a route that did not exist, so the user got a
   404 and no idea why. This says which right is missing and who can grant it.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

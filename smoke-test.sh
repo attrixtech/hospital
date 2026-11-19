@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# ICTHospital — route smoke test
+# thrumble.hospital — route smoke test
 #
 # Logs in once, then GETs every parameterless route and records the status code.
 # Use it after any refactor to see how much of the app still responds.
@@ -8,8 +8,8 @@
 # Usage: bash smoke-test.sh [base-url] [login] [password]
 # The app must be running: docker compose up -d
 #
-# Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-# Part of ICTHospital <https://www.icthospital.com>
+# Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+# Part of thrumble.hospital
 # Licensed under the GNU General Public License v3.0.
 
 BASE="${1:-http://localhost:8082}"
@@ -18,7 +18,7 @@ PASS="${3:-123456}"
 JAR="$(mktemp)"
 OUT="$(mktemp)"
 
-cd ~/dev/icthospital-app 2>/dev/null || true
+cd ~/dev/thrumble-hospital 2>/dev/null || true
 
 # The Docker daemon lives inside WSL, so containers stop when the VM does.
 docker compose up -d >/dev/null 2>&1

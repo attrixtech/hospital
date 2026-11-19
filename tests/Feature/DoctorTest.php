@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - doctor register feature tests.
+ * thrumble.hospital - doctor register feature tests.
  *
  * The point of this module is that a clean install can be made usable, so the
  * first test is the one that would have failed before: adding a doctor with
  * nothing filled in but a name, on a database built from migrations alone.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

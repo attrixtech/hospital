@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - doctor share policies, the share report, approval and payout.
+ * thrumble.hospital - doctor share policies, the share report, approval and payout.
  *
  * Shares are worked out when an invoice is raised (see ShareCalculator). A share can
  * only be approved once its invoice is paid in full, because a hospital pays the
  * doctor out of money it has collected, and approved shares are paid out in a batch
  * that is also written to the accounting ledger as an expense.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -32,7 +32,7 @@ $permision[] = $permission->permission_name;
         ===
     -->
     <meta charset="utf-8">
-    <title>@if(Session::get('inName')=='') Hospital Mitra @else {{Session::get('inName')}} @endif</title>
+    <title>@if(Session::get('inName')=='') thrumble.hospital @else {{Session::get('inName')}} @endif</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}" />
 
@@ -352,7 +352,7 @@ table i {
 
        The breakpoint matches the sidebar's own d-none d-lg-block, so nothing changes
        on tablet and phone where the sidebar is off canvas. --}}
-  <style id="icthospital-content-offset">
+  <style id="thrumble-hospital-content-offset">
     @media (min-width: 992px) {
       .main-content { padding-left: 300px; }
     }
@@ -371,7 +371,7 @@ table i {
       .box-header h2 { white-space: normal; }
     }
   </style>
-  <link href="{{ asset('css/icthospital-ui.css') }}?v=2026.10" rel="stylesheet">
+  <link href="{{ asset('css/thrumble-hospital-ui.css') }}?v=2026.10" rel="stylesheet">
 </head>
 
 <body @if(Request::is('student/create-file')) @else class="animsition" @endif>
@@ -399,8 +399,8 @@ table i {
                             <div class="logo d-block d-lg-none">
 
                                 <a class="js-arrow" href="#">
-                                    @if(Session::get('inName')=='' || Session::get('inName')=='ICTHospital')
-                                    <img src="{{ asset('img/brand/icthospital-logo.svg') }}" alt="ICTHospital" style="height:34px" />
+                                    @if(Session::get('inName')=='' || Session::get('inName')=='thrumble.hospital')
+                                    <img src="{{ asset('img/brand/thrumble-hospital-logo.svg') }}" alt="thrumble.hospital" style="height:34px" />
                                     @else
                                       <h2>{{Session::get('inName')}}</h2>
                                     @endif
@@ -683,9 +683,9 @@ table i {
                           <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
-                                   <p class="col-md-9 col-sm-9 col-xs-12 copyright"> <a href="#" target="_blank">{{Session::get('inName')}}</a> &copy;<?php echo date("Y");?></p>
-                                    <p class="col-md-3 col-sm-3 col-xs-12 powered-by">Developed by:
-                                    <a href="https://www.ictinnovations.com/" target="_blank" rel="noopener">ICT Innovations</a></p>
+                                   <p class="col-md-7 col-sm-7 col-xs-12 copyright"> <a href="#" target="_blank">{{Session::get('inName') ?: 'thrumble.hospital'}}</a> &copy;<?php echo date("Y");?></p>
+                                    <p class="col-md-5 col-sm-5 col-xs-12 powered-by">Developed by:
+                                    <a href="https://www.attrixtech.com" target="_blank" rel="noopener">Attrix Technologies</a> &amp; <a href="https://www.infusionn.in" target="_blank" rel="noopener">Infusionn Pvt. Ltd.</a></p>
                                 </div>
                             </div>
                         </div>

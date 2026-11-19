@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - hospital departments.
+ * thrumble.hospital - hospital departments.
  *
  * The department table came across from the CodeIgniter system with no screen, so the
  * doctor form had to fall back to free text with a datalist of whatever had already
@@ -12,8 +12,8 @@
  * and export in the wild reads it that way, so renaming here offers to carry the
  * doctors across instead of silently orphaning them.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

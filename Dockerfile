@@ -1,4 +1,4 @@
-# Laravel 11 dev image for ICTSchool (and the ICTHospital rebuild).
+# Laravel 11 dev image for thrumble.hospital.
 # Base image php:8.3-cli is already pulled locally, so this builds fast.
 FROM php:8.3-cli
 

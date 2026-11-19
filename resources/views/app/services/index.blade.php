@@ -1,5 +1,5 @@
 {{--
-  ICTHospital - billable services and price list.
+  thrumble.hospital - billable services and price list.
 
   Editing is inline: each row is its own form, so a price can be corrected
   without a round trip to a separate screen. A price list gets adjusted far more
@@ -10,8 +10,8 @@
   inside the cells instead produces markup browsers silently reparent, which is
   how inline table editing usually ends up posting the wrong row.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

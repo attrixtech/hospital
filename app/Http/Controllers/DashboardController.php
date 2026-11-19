@@ -1,10 +1,10 @@
 <?php
 
 /**
- * ICTHospital dashboard controller.
+ * thrumble.hospital dashboard controller.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 
@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Schema;
 /**
  * Hospital dashboard.
  *
- * Replaces the school dashboard inherited from ICTSchool. Every figure below is
+ * Replaces the legacy school dashboard. Every figure below is
  * read from the hospital schema. Counts are defensive: the tables exist from the
  * migrations but may be empty on a fresh install, and several date columns are
  * still varchar in the legacy schema, so date filtering is done in SQL only where

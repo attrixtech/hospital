@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - give a pharmacy sale real line items.
+ * thrumble.hospital - give a pharmacy sale real line items.
  *
  * pharmacy_payment.category_name and category_amount are the same packed string
  * pair found on prescriptions and lab requests: every item on the sale in one
@@ -8,8 +8,8 @@
  * it, and nothing decremented stock, so the quantity column on the medicine
  * catalogue only ever moved when somebody edited it by hand.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

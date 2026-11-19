@@ -1,9 +1,9 @@
 <?php
 /**
- * ICTHospital - add catalogue permissions that are missing from the table.
+ * thrumble.hospital - add catalogue permissions that are missing from the table.
  *
  * The seeder only fills the permission table when it is empty, so an install
- * upgraded from ICTSchool keeps its old rows: student_view, class_add, exam_marks
+ * upgraded from a legacy school install keeps its old rows: student_view, class_add, exam_marks
  * and the rest. None of the hospital keys exist there, so the moment the clinical
  * routes started checking permissions, every role including Admin would have been
  * locked out of every screen.
@@ -16,8 +16,8 @@
  *   php artisan hospital:sync-permissions --prune      also drop keys not in the catalogue
  *   php artisan hospital:sync-permissions --dry-run    report and change nothing
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 
@@ -107,7 +107,7 @@ class SyncPermissions extends Command
         $this->info(($dryRun ? 'Would add ' : 'Added ') . $added . ' permission row(s) across ' . count($groups) . ' role(s).');
 
         if ($stale > 0) {
-            $this->warn($stale . ' stored permission(s) are not in the catalogue, most likely left over from ICTSchool.');
+            $this->warn($stale . ' stored permission(s) are not in the catalogue, most likely left over from a legacy install.');
             $this->warn('They are harmless but you can clear them with --prune.');
         }
 

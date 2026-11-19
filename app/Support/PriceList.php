@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - what a service costs this patient, here.
+ * thrumble.hospital - what a service costs this patient, here.
  *
  * Looks up the patient type's price for the care setting (outpatient or inpatient),
  * and falls back to the service's list price when that type has no price set. One
  * place answers it so the invoice form, the server-side check and the OPD visit fee
  * can never disagree.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - role permissions.
+ * thrumble.hospital - role permissions.
  *
  * The catalogue and the role list come from config/hospital_permissions.php so the
  * controller and the checkbox grid can never drift out of order. The school
  * catalogue this replaces granted rights over students, classes, exams and fees.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

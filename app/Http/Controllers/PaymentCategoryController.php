@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - billable services and their price list.
+ * thrumble.hospital - billable services and their price list.
  *
  * Invoice lines are raised against this table. Until now there was no screen for
  * it, so a clean install had an empty service list and the invoice form offered
@@ -12,8 +12,8 @@
  * what a patient was billed. Same reasoning as the lab and medicine catalogues,
  * and there is a test for it.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

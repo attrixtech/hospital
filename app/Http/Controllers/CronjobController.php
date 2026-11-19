@@ -1,8 +1,8 @@
 <?php
 /**
- * ICTHospital - scheduled notification jobs.
+ * thrumble.hospital - scheduled notification jobs.
  *
- * Replaces the school fee notification inherited from ICTSchool, which walked the
+ * Replaces the legacy school fee notification, which walked the
  * Student table and chased unpaid monthly school bills through stdBill/billHistory.
  * The hospital equivalent is an outstanding patient payment: a row in `payment`
  * where the amount received is short of the gross total.
@@ -11,8 +11,8 @@
  * unconfigured ICTCore integration returns a described "skipped" result rather
  * than a 500, because this runs unattended from cron.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 
@@ -51,7 +51,7 @@ class CronjobController extends BaseController
     {
         $result = $this->runPaymentReminder();
 
-        Log::info('ICTHospital payment reminder', $result);
+        Log::info('thrumble.hospital payment reminder', $result);
 
         return response()->json($result);
     }
@@ -207,7 +207,7 @@ class CronjobController extends BaseController
 
         return $ict->ictcore_api('groups', 'POST', [
             'name' => 'Patient payment reminder',
-            'description' => 'Outstanding patient payments, created by the ICTHospital cron job',
+            'description' => 'Outstanding patient payments, created by the thrumble.hospital cron job',
         ]);
     }
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - report on, and optionally apply, the schema modernisation.
+ * thrumble.hospital - report on, and optionally apply, the schema modernisation.
  *
  *   php artisan hospital:modernise-schema            report only, changes nothing
  *   php artisan hospital:modernise-schema --apply    make the safe changes
@@ -8,8 +8,8 @@
  * Read the report before applying. Anything marked "skip" needs the data cleaning
  * up first, and the reason says what is wrong with it.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

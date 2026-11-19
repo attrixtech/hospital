@@ -111,7 +111,7 @@ Route::group(['middleware' => ['auth', 'activity']], function () {
 Route::group(['middleware' => ['web', 'activity']], function () {
 });
 
-// The ICTSchool student route groups stood here. Every one was empty after the
+// The legacy school student route groups stood here. Every one was empty after the
 // rebuild and the student_* permissions they named are no longer in the
 // catalogue, so they were removed rather than left as dead scaffolding.
 

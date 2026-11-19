@@ -1,12 +1,12 @@
 {{--
-  ICTHospital - write or edit a prescription.
+  thrumble.hospital - write or edit a prescription.
 
   The medicine rows repeat. A drug can be picked from the catalogue or typed in
   free, because a doctor writing something the hospital does not stock should not
   be blocked by the stock list.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

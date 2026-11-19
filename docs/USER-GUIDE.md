@@ -1,11 +1,11 @@
-# ICTHospital User Guide
+# thrumble.hospital User Guide
 
 This walks you through the system the way you'd actually use it: register a patient,
 book them in, admit them, prescribe, order bloods, dispense, bill, and read the reports
 at the end of the week. Every screen shown here is a real screenshot of a working
 install with demonstration data loaded.
 
-Developed by Tahir Almas, [ICT Innovations](https://www.ictinnovations.com).
+Developed by [Attrix Technologies](https://www.attrixtech.com) & [Infusionn Pvt. Ltd.](https://www.infusionn.in).
 
 ---
 
@@ -23,7 +23,7 @@ shorter than an administrator's.
 
 ### Load the demonstration data
 
-An empty system is hard to judge. If you're evaluating ICTHospital, load a small set of
+An empty system is hard to judge. If you're evaluating thrumble.hospital, load a small set of
 believable records first:
 
 ```bash
@@ -298,7 +298,7 @@ when the system is installed. Everyone else starts with nothing and is given wha
 need on this grid. The menu hides what a role can't open, so nobody is offered a link that
 bounces them.
 
-**If you're upgrading from ICTSchool**, run this once after migrating or every role,
+**If you're upgrading from a legacy install**, run this once after migrating or every role,
 including Admin, will be locked out of every screen:
 
 ```bash
@@ -354,11 +354,6 @@ and skip the demo seeder. Don't run `migrate:fresh` on anything real.
 
 ## Getting help
 
-ICTHospital is open source under the GPL v3. Issues and contributions are welcome at
-[github.com/ictinnovations/ICTHospital](https://github.com/ictinnovations/ICTHospital).
+thrumble.hospital is open source under the GPL v3.
 
-If you're weighing it up for a live deployment, get in touch through
-[icthospital.com](https://www.icthospital.com) and we can talk about your data and your
-migration.
-
-Developed by Tahir Almas, [ICT Innovations](https://www.ictinnovations.com).
+Developed by [Attrix Technologies](https://www.attrixtech.com) & [Infusionn Pvt. Ltd.](https://www.infusionn.in).

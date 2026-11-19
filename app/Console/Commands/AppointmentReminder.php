@@ -1,8 +1,8 @@
 <?php
 /**
- * ICTHospital - remind patients about an upcoming appointment.
+ * thrumble.hospital - remind patients about an upcoming appointment.
  *
- * Replaces attendanceNotification from ICTSchool, which chased absent students and
+ * Replaces the legacy attendanceNotification, which chased absent students and
  * texted their parents. A hospital does not take attendance, it books appointments,
  * so the same ICTCore plumbing now sends the patient a reminder for the day.
  *
@@ -10,8 +10,8 @@
  *   php artisan hospital:appointment-reminder            reminds about tomorrow
  *   php artisan hospital:appointment-reminder --days=0   reminds about today
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

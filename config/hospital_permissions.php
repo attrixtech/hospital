@@ -1,20 +1,20 @@
 <?php
 /**
- * ICTHospital - the permission catalogue and the roles it applies to.
+ * thrumble.hospital - the permission catalogue and the roles it applies to.
  *
  * This list used to be duplicated, once in PermissionController and once inside
  * permission.blade.php. The two had to stay in the same order or the checkbox
  * grid read the wrong rows, so it now lives here and both read it from config.
  *
- * The labels replace the school catalogue inherited from ICTSchool, which granted
+ * The labels replace the legacy school catalogue, which granted
  * rights over students, classes, exams, marks and school fees.
  *
  * `permission_name` in the database is the label lowercased with spaces turned
  * into underscores, so changing a label changes the stored key. Add to the end of
  * the list rather than reordering it if you already have permissions saved.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

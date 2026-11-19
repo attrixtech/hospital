@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - sign-in accounts for doctors and staff.
+ * thrumble.hospital - sign-in accounts for doctors and staff.
  *
  * A doctor or staff record and a login are separate rows: the record is who the person
  * is on the register, the users row is how they sign in and which permission column
@@ -8,8 +8,8 @@
  * forms create or update the login through this class, so an admin can hand over a
  * username and password as soon as the person is added.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

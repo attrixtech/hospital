@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - one payment against an invoice.
+ * thrumble.hospital - one payment against an invoice.
  *
  * The legacy schema had a single amount_received column on the invoice, which
  * cannot represent the ordinary case of a deposit now and the balance later. Each
  * payment is its own row, and what is still owed is the difference between the
  * invoice total and the sum of these.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

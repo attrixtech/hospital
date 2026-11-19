@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the OPD consultation note.
+ * thrumble.hospital - the OPD consultation note.
  *
  * Until now a visit carried vitals and a free-text remark, and the clinical record
  * lived in prescriptions, lab requests and history notes. A consultation is the
@@ -9,8 +9,8 @@
  * clinic needs. Structured sections are JSON, because each specialty has its own
  * fields and most visits fill only a few of them.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

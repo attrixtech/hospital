@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - bed register.
+ * thrumble.hospital - bed register.
  *
  * Beds and bed categories came across in the rebuild with tables, models and
  * migrations but no way to see or edit them, so a ward could not be set up and
@@ -11,8 +11,8 @@
  * out of step with reality the first time somebody discharged a patient without
  * remembering to change it.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

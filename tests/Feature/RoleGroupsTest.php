@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - user roles line up with the permission catalogue.
+ * thrumble.hospital - user roles line up with the permission catalogue.
  *
  * The user form used to offer Director, Receptionist and Staff, none of which had a
  * column in the permission grid, so those users could never be given any access.
  * Roles now come from config/hospital_permissions.php, which includes the front desk.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

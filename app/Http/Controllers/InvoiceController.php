@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - patient invoicing.
+ * thrumble.hospital - patient invoicing.
  *
  * The last of the packed string pairs. payment.category_name held every charge
  * and payment.category_amount held every price, matched by position, so a
@@ -11,8 +11,8 @@
  * the legacy single amount_received column cannot express a deposit now and the
  * balance later, which is the ordinary case.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

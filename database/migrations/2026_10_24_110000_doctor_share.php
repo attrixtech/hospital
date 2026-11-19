@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - doctor share.
+ * thrumble.hospital - doctor share.
  *
  * Private hospitals pay most doctors a cut of what they bill: a percentage of each
  * visit or procedure, sometimes different for panel patients, sometimes a smaller
@@ -12,8 +12,8 @@
  * doctor is owed is a list of lines that can be approved and paid, not a sum
  * somebody works out at the end of the month.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

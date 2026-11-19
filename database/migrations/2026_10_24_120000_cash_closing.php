@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - who took each payment, and the end-of-shift cash close.
+ * thrumble.hospital - who took each payment, and the end-of-shift cash close.
  *
  * At the end of a shift the cashier counts the drawer and hands over. The system
  * has to say what should be there: every payment that cashier took since their last
  * close, split by how it was paid. A payment belongs to exactly one close, so money
  * cannot be counted twice or slip between two shifts.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

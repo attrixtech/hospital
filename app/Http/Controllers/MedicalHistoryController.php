@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - patient medical history.
+ * thrumble.hospital - patient medical history.
  *
  * The table came across from the CodeIgniter system with no controller and no view,
  * so the history a clinician most wants before seeing someone was unreachable. Entries
@@ -12,8 +12,8 @@
  * still read correctly when a patient later moves house or changes their number. The
  * live patient record is still the one the screens link to.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

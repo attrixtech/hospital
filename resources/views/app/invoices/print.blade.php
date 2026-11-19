@@ -1,13 +1,13 @@
 {{--
-  ICTHospital - printable invoice for the patient.
+  thrumble.hospital - printable invoice for the patient.
 
   A page of its own rather than the invoice screen printed through the app layout:
   the layout's fixed sidebar, full-height wrapper and screen-only styling produced
   blank pages in some browsers. Same approach as the consultation and radiology
   print pages.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 <!doctype html>

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - let bed and admission rows hold real nulls.
+ * thrumble.hospital - let bed and admission rows hold real nulls.
  *
  * Third table group with the same inherited problem: the CodeIgniter schema
  * declared every column NOT NULL and the application wrote empty strings, so a
@@ -12,8 +12,8 @@
  * no way to express "has not been discharged" other than an empty string, which
  * is exactly the ambiguity this replaces.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

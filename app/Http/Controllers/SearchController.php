@@ -1,10 +1,10 @@
 <?php
 
 /**
- * ICTHospital global search controller.
+ * thrumble.hospital global search controller.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 
@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Schema;
 /**
  * Global search across hospital records.
  *
- * Replaces the school search inherited from ICTSchool, which queried the Student
+ * Replaces the legacy school search, which queried the Student
  * table and never returned its results. Searches patients and doctors, and only
  * against columns that actually exist, so a schema change cannot produce a 500.
  */

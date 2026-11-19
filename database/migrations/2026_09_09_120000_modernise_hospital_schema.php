@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - modernise the legacy schema.
+ * thrumble.hospital - modernise the legacy schema.
  *
  * Converts varchar date columns to DATE or DATETIME, converts the varchar columns
  * that hold a parent row's id to integers, and adds the foreign keys. Each change
@@ -8,8 +8,8 @@
  * information, so this is safe to run on an existing install as well as a fresh
  * one. Run `php artisan hospital:modernise-schema` beforehand to see the report.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

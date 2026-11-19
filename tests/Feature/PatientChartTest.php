@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - patient chart feature tests.
+ * thrumble.hospital - patient chart feature tests.
  *
  * The patient page brings together everything recorded against one patient: history
  * notes, OPD visits with vitals, ward stays and billing. These tests write each record
  * through its own module's route, as staff would, then check the chart shows it, adds
  * up the money correctly, and never shows another patient's records.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

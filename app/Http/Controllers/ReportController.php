@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - reports across the clinical child tables.
+ * thrumble.hospital - reports across the clinical child tables.
  *
  * Replacing the packed varchar columns with real rows was the point of the
  * rebuild: prescription_medicine instead of prescription.medicine, lab_test
@@ -13,8 +13,8 @@
  * out of step, which is the failure this system inherited everywhere it had a
  * hand set status column.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

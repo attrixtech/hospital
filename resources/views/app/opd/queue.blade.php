@@ -1,8 +1,8 @@
 {{--
-  ICTHospital - OPD token queue for a day: check in, call in, done, bill the visit.
+  thrumble.hospital - OPD token queue for a day: check in, call in, done, bill the visit.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

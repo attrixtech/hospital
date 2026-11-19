@@ -479,7 +479,7 @@ $patients = DB::table('patient')->select('*')->get();
 		$name = DB::table('institute')->value('name');
 
 		if (empty($name)) {
-			$name = config('app.name', 'ICTHospital');
+			$name = config('app.name', 'thrumble.hospital');
 		}
 
 		$mask = preg_replace('/[^A-Za-z0-9]/', '', $name);

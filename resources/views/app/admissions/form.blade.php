@@ -1,11 +1,11 @@
 {{--
-  ICTHospital - admit a patient.
+  thrumble.hospital - admit a patient.
 
   Only free beds are offered, so a clash is hard to reach from the form. The
   controller still checks, because two clerks can have this page open at once.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

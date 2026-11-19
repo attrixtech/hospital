@@ -1,11 +1,11 @@
 <?php
 /**
- * ICTHospital - raises a lab request from code (tests ordered during a consultation).
+ * thrumble.hospital - raises a lab request from code (tests ordered during a consultation).
  *
  * Writes the same rows and legacy summary columns as the lab request screen.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - one place that answers "is this user allowed to do that".
+ * thrumble.hospital - one place that answers "is this user allowed to do that".
  *
  * The middleware and the sidebar both need the answer, and before this they could
  * not share it: the middleware ran a query per request and the sidebar simply did
@@ -9,8 +9,8 @@
  * The grant table is read once per request and held in memory. A page with a dozen
  * gated menu entries on it would otherwise run a dozen identical queries.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

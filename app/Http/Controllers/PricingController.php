@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - patient types and the price list per type.
+ * thrumble.hospital - patient types and the price list per type.
  *
  * The services screen keeps the list price. This screen sets what each patient type
  * pays for each service, separately for outpatients and inpatients, and covers the
  * chores a billing office actually does with a price list: copy one company's list
  * to start a new one, put a whole list up or down by a percentage, and download it.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

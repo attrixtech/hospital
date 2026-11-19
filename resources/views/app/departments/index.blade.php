@@ -1,12 +1,12 @@
 {{--
-  ICTHospital - hospital departments.
+  thrumble.hospital - hospital departments.
 
   Inline edit, one form per row, declared above the table and referenced by the HTML
   form attribute. A form element cannot wrap a table row, and nesting them in the cells
   makes the browser reparent the markup and post the wrong row.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

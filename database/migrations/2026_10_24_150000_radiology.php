@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - radiology: the exam catalogue, orders and reports.
+ * thrumble.hospital - radiology: the exam catalogue, orders and reports.
  *
  * An order moves ordered, scheduled, done, reported (or cancelled). The exam name,
  * modality and the radiologist's findings are written on the order itself, so a
  * report reads the same after the catalogue changes.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

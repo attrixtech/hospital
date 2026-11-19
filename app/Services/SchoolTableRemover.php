@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - remove the school tables inherited from ICTSchool.
+ * thrumble.hospital - remove the legacy school tables.
  *
  * Thirty-three tables came across with the fork and describe a school, not a
  * hospital: students, classes, sections, subjects, exams, marks, GPA rules,
@@ -18,8 +18,8 @@
  * lower case one exists separately, so a case folding install cannot lose its
  * hospital holidays.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

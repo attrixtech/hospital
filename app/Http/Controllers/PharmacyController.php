@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - pharmacy dispensing.
+ * thrumble.hospital - pharmacy dispensing.
  *
  * pharmacy_payment came across as a sale header with the items packed into
  * category_name and their prices into category_amount, matched by position.
@@ -11,8 +11,8 @@
  * the same transaction, so the stock figure is a consequence of what was handed
  * over rather than an independent guess.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

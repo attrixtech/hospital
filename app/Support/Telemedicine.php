@@ -1,9 +1,9 @@
 <?php
 /**
- * ICTHospital - video consultation rooms.
+ * thrumble.hospital - video consultation rooms.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 
@@ -14,7 +14,7 @@ class Telemedicine
     /** A long random room name: anyone with the link can join, nobody can guess it. */
     public static function newRoom()
     {
-        return config('telemedicine.room_prefix', 'icthospital') . '-' . bin2hex(random_bytes(12));
+        return config('telemedicine.room_prefix', 'thrumble-hospital') . '-' . bin2hex(random_bytes(12));
     }
 
     public static function url($appointment)

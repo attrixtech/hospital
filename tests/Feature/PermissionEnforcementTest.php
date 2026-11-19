@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - permission enforcement feature tests.
+ * thrumble.hospital - permission enforcement feature tests.
  *
  * The 90 entry catalogue existed and the grid edited it, but no clinical route
  * checked it, so anyone with an account reached every screen. These tests hold
  * that shut: an Admin gets through, a role with nothing granted does not, and
  * granting the one right it needs is enough to let it in.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

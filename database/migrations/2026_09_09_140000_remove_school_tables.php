@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - drop the school tables on an existing install.
+ * thrumble.hospital - drop the school tables on an existing install.
  *
  * The migrations that created these tables have been deleted, so a fresh install
  * never makes them. This removes them from a database that already has them.
@@ -12,8 +12,8 @@
  * There is no down(). Recreating thirty-three empty school tables would serve
  * nobody, and the data could not come back with them.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

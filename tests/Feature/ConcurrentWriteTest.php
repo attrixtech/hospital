@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the writes that had no lock.
+ * thrumble.hospital - the writes that had no lock.
  *
  * Appointments and admissions already took a row lock. Pharmacy stock, invoice
  * payment and patient id allocation did not, and each could be made to misbehave by
@@ -13,8 +13,8 @@
  * arithmetic is right. The locks themselves are exercised by MySQL and MariaDB in
  * production, and are reviewable in the three controllers.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

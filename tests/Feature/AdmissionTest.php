@@ -1,12 +1,12 @@
 <?php
 /**
- * ICTHospital - beds and admissions feature tests.
+ * thrumble.hospital - beds and admissions feature tests.
  *
  * The invariants are the point of the module: one patient per bed, one bed per
  * patient, and a discharge that actually frees the bed.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

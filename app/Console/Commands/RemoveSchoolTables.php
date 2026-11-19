@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - report on, and optionally apply, removal of the school tables.
+ * thrumble.hospital - report on, and optionally apply, removal of the school tables.
  *
  *   php artisan hospital:remove-school-tables            report only
  *   php artisan hospital:remove-school-tables --apply    drop the empty ones
  *   php artisan hospital:remove-school-tables --apply --force
  *                                                        drop them even with rows
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 
@@ -23,7 +23,7 @@ class RemoveSchoolTables extends Command
                             {--apply : drop the tables instead of only reporting}
                             {--force : drop them even when they still hold rows}';
 
-    protected $description = 'Remove the ICTSchool tables the hospital build no longer uses';
+    protected $description = 'Remove the legacy school tables the hospital build no longer uses';
 
     public function handle()
     {

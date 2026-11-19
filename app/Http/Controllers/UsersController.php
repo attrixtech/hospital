@@ -295,7 +295,6 @@ class UsersController extends BaseController
 
   public  function show()
   {
-    //User::create(array('firstname'=>'Mr.','lastname'=>'kashif','login'=>'ictkashif','email' => 'kashif@ictinnovations.com','group'=>'Admin','desc'=>'admin Deatils Here',"password"=> Hash::make("123456")));
     $users = User::all();
     $user = array();
     //return View::Make('app.users',compact('users','user'));

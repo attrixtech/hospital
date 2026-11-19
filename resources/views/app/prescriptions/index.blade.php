@@ -1,11 +1,11 @@
 {{--
-  ICTHospital - prescription list.
+  thrumble.hospital - prescription list.
 
   The drug filter is the query the legacy free text column made impossible, so it
   is on the screen rather than buried.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

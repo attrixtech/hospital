@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - how a payment was made, and the buckets cash closing totals into.
+ * thrumble.hospital - how a payment was made, and the buckets cash closing totals into.
  *
  * invoice_payment.method has always been free text, so older rows hold whatever
  * was typed. bucket() maps anything to one of the five totals, so an old "cash" or
@@ -9,8 +9,8 @@
  * A write-off is recorded as a payment row so the invoice settles, but it is not
  * money and is kept out of every collection total.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

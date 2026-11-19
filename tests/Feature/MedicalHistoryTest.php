@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - medical history and payment gateway feature tests.
+ * thrumble.hospital - medical history and payment gateway feature tests.
  *
  * Two things carry most of the weight here. A history entry keeps the patient details
  * as they were when it was written, so an old note still reads correctly after someone
  * moves house. And a gateway secret is never rendered back into the page, because a
  * settings screen that prints an API password puts it in every browser cache.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

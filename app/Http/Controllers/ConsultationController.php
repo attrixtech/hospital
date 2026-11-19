@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the OPD consultation screen.
+ * thrumble.hospital - the OPD consultation screen.
  *
  * One page per visit: vitals, complaint, history, examination by system, diagnosis,
  * plan and follow-up, the specialty sections, and orders (lab tests now, a
@@ -8,8 +8,8 @@
  * patient's previous consultation, because a doctor should not have to ask a known
  * diabetic whether they are diabetic at every visit.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

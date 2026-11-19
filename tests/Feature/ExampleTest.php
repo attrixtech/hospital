@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - basic application boot test.
+ * thrumble.hospital - basic application boot test.
  *
  * This replaces the stock Laravel scaffold test, which asserted a 200 from `/`
  * without migrating anything. The root route reads settings out of the database,
  * so against an empty schema it returned a 500 and the assertion said nothing
  * about whether the application works.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

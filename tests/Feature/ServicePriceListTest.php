@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - service and price list feature tests.
+ * thrumble.hospital - service and price list feature tests.
  *
  * The one that matters most is the last: editing a price must not rewrite an
  * invoice that was already raised at the old price. Every catalogue in this
  * system carries the same test, because that is the failure the child tables
  * were introduced to prevent.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

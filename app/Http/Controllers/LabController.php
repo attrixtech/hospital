@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - laboratory requests and results.
+ * thrumble.hospital - laboratory requests and results.
  *
  * The lab table came across with `category_name` holding every test on a request
  * as one packed string and `report` holding all the results as another. Neither
@@ -11,8 +11,8 @@
  * request's own status is derived from its tests rather than set by hand, so the
  * two cannot disagree.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

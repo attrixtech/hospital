@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - one line on a pharmacy sale.
+ * thrumble.hospital - one line on a pharmacy sale.
  *
  * The name and unit price are stored here rather than read back from the
  * catalogue. A sale is a financial record of what was handed over and what was
  * charged on the day, and it must not change when the catalogue price is next
  * updated.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the accounting_settings table.
+ * thrumble.hospital - the accounting_settings table.
  *
  * AccountingSetting has always been in the model directory and the accounting
  * page has always queried it, but no migration ever created the table, so
@@ -8,8 +8,8 @@
  *
  * It holds the credentials for an external accounting API, one row.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

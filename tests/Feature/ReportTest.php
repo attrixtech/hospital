@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - report feature tests.
+ * thrumble.hospital - report feature tests.
  *
  * Each report exists because a child table made the question answerable, so each
  * test builds the rows and checks the number that comes out, rather than only
  * checking the page loads.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

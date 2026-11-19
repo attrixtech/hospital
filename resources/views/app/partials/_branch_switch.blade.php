@@ -1,8 +1,8 @@
 {{--
-  ICTHospital - branch switcher in the top bar, for users not tied to one branch.
+  thrumble.hospital - branch switcher in the top bar, for users not tied to one branch.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 @php($branches = \Illuminate\Support\Facades\Schema::hasTable('hospital_branch') ? \App\Models\HospitalBranch::where('active', true)->orderBy('name')->get(['id', 'name']) : collect())

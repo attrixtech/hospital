@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - the test catalogue.
+ * thrumble.hospital - the test catalogue.
  *
  * Lab requests are raised against this list, so nothing could be requested until
  * there was a way to fill it. Each entry carries the reference range, which is
  * copied onto a test when it is requested rather than read live, because a result
  * has to be interpretable against the range that applied when it was measured.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - give a lab request real line items.
+ * thrumble.hospital - give a lab request real line items.
  *
  * Same shape of problem as the prescription table. `lab.category_name` is a
  * varchar(1000) holding every test on the request as one string, and `lab.report`
@@ -12,8 +12,8 @@
  * result and status, so a request can be part reported. The legacy columns are
  * kept and filled with readable summaries.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

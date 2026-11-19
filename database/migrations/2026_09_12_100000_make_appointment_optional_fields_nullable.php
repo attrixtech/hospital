@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - let an appointment be stored without the legacy filler columns.
+ * thrumble.hospital - let an appointment be stored without the legacy filler columns.
  *
  * Same problem as the patient table: the appointment schema was transcribed from
  * CodeIgniter, where every column was NOT NULL and the application wrote empty
@@ -9,8 +9,8 @@
  * run hospital:modernise-schema accepts it, so the failure only appears on a
  * fresh deployment or in CI.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

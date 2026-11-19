@@ -1,11 +1,11 @@
 {{--
-  ICTHospital - dispense medicines.
+  thrumble.hospital - dispense medicines.
 
   Arriving from a prescription pre-loads its drugs, which is the common case at a
   hospital counter: somebody turns up holding one.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

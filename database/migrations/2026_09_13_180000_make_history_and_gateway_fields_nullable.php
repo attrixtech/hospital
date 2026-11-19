@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - nullable columns for medical history and payment gateways.
+ * thrumble.hospital - nullable columns for medical history and payment gateways.
  *
  * The same NOT NULL inheritance that hit every other legacy table. A history entry
  * with no attachment, or a gateway configured with only an API username, should be
  * savable, and the controllers write empty strings for anything reading these tables
  * directly.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

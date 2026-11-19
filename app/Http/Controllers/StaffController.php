@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - nurses, pharmacists, laboratory staff, receptionists and accountants.
+ * thrumble.hospital - nurses, pharmacists, laboratory staff, receptionists and accountants.
  *
  * Five tables of the same shape, so one controller drives all of them from
  * config/hospital_staff.php rather than five near-copies that drift the first time a
@@ -11,8 +11,8 @@
  * procedure id, and the clinical screens select from them, so they keep their own
  * controller.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

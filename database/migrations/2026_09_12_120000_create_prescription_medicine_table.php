@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - give a prescription real line items.
+ * thrumble.hospital - give a prescription real line items.
  *
  * The legacy `prescription.medicine` column is a varchar(1000) that the
  * CodeIgniter application packed the whole drug list into as one string. Nothing
@@ -12,8 +12,8 @@
  * is kept and filled with a readable summary, so anything still reading it keeps
  * working and old rows are not stranded.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

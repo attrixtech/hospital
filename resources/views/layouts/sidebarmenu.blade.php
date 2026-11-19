@@ -2,7 +2,7 @@
   main navigation.
 
   Every entry here points at a route that exists. The menu this replaces was the
-  ICTSchool one: students, teachers, classes, sections, exams, marks, GPA rules,
+  legacy school one: students, teachers, classes, sections, exams, marks, GPA rules,
   promotion, timetables, question papers, academic years and family fee vouchers.
   Those controllers and routes were removed during the hospital rebuild, so every
   one of those links was a dead end.
@@ -39,7 +39,7 @@ $active = function ($prefixes) use ($here) {
 ?>
 
 <div class="sidebar-nav nav-canvas-thumb">
-  <a class="ih-brand" href="{{ url('/dashboard') }}" aria-label="ICTHospital home"><img src="{{ asset('img/brand/icthospital-logo.svg') }}" alt="ICTHospital"></a>
+  <a class="ih-brand" href="{{ url('/dashboard') }}" aria-label="thrumble.hospital home"><img src="{{ asset('img/brand/thrumble-hospital-logo.svg') }}" alt="thrumble.hospital"></a>
   <ul class="nav nav-pills nav-stacked main-menu">
 
     <li class="nav-header">Main</li>

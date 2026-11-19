@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - list filters submitted with blank fields.
+ * thrumble.hospital - list filters submitted with blank fields.
  *
  * A filter form sends every field, and Laravel turns a blank one into null. The lists
  * compared against '' and so filtered on "status IS NULL" and similar, which returned
  * nothing whenever "All doctors" or "Any status" was left selected (found on the demo,
  * 22 October 2026). Each list must treat a blank field as "all".
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

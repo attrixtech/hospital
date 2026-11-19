@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - let a patient be registered without a date of birth.
+ * thrumble.hospital - let a patient be registered without a date of birth.
  *
  * The patient table was transcribed from the CodeIgniter schema, where every
  * column was NOT NULL and the application wrote empty strings into the ones it
@@ -15,8 +15,8 @@
  * add_date is included for the same reason. It is stamped by the controller
  * today, but nothing should force a date column to hold a value it does not have.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

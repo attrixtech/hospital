@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - let a doctor be added with just a name.
+ * thrumble.hospital - let a doctor be added with just a name.
  *
  * Every column on the doctor table was transcribed NOT NULL from the CodeIgniter
  * schema, including img_url, email, address, department, profile and the two
@@ -16,8 +16,8 @@
  * touches nullable, so it only shows on a clean install from migrations, which is
  * what CI and every new deployment does.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

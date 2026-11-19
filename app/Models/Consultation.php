@@ -1,9 +1,9 @@
 <?php
 /**
- * ICTHospital - the doctor's note for one OPD visit.
+ * thrumble.hospital - the doctor's note for one OPD visit.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

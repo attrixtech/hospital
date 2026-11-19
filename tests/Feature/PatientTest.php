@@ -1,13 +1,13 @@
 <?php
 /**
- * ICTHospital - patient module feature tests.
+ * thrumble.hospital - patient module feature tests.
  *
  * The route smoke test only issues GETs, so it proves the pages render and
  * nothing more. These cover the write path: registration, the derived age, the
  * sequential patient ID, and the search box.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

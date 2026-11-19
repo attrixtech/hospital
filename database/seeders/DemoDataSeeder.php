@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - a small set of believable records for evaluating the system.
+ * thrumble.hospital - a small set of believable records for evaluating the system.
  *
  * Every screen looks the same when it is empty, and an empty system is the hardest
  * thing to judge. This fills one day of a small hospital: a few departments and
@@ -14,8 +14,8 @@
  *
  *   php artisan db:seed --class=DemoDataSeeder
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 
@@ -123,7 +123,7 @@ class DemoDataSeeder extends Seeder
             \App\Models\User::firstOrCreate(['login' => $login], [
                 'firstname' => $first,
                 'lastname' => $last,
-                'email' => $login . '@demo.icthospital.test',
+                'email' => $login . '@demo.thrumble.hospital',
                 'group' => $group,
                 'desc' => 'Demo login (' . strtolower($group) . ')',
                 'password' => \Illuminate\Support\Facades\Hash::make($password),

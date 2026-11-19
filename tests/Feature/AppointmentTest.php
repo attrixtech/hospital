@@ -1,12 +1,12 @@
 <?php
 /**
- * ICTHospital - appointment module feature tests.
+ * thrumble.hospital - appointment module feature tests.
  *
  * The clash check is the reason this module exists as more than a form, so most
  * of these cover it.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

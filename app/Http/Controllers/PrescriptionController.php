@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - prescriptions.
+ * thrumble.hospital - prescriptions.
  *
  * The prescription table came across in the rebuild with a varchar(1000)
  * `medicine` column that the old application packed the whole drug list into as
@@ -10,8 +10,8 @@
  * Prescribed drugs are now rows in prescription_medicine. The legacy column is
  * still written with a readable summary so anything reading it keeps working.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

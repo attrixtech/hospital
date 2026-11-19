@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - when a doctor can be booked.
+ * thrumble.hospital - when a doctor can be booked.
  *
  * A doctor with no weekly slots set up can be booked at any time, exactly as before,
  * so an install that never touches this screen behaves the same. Once a doctor has
  * slots, a booking has to fit inside one of that weekday's windows. Blocked dates
  * (leave, a half day) apply either way.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,12 +1,12 @@
 <?php
 /**
- * ICTHospital - raises an invoice from code (an OPD visit fee, a radiology order).
+ * thrumble.hospital - raises an invoice from code (an OPD visit fee, a radiology order).
  *
  * Writes the same header, lines, legacy summary columns and doctor shares as an
  * invoice raised on the invoice screen, priced from the patient's type.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

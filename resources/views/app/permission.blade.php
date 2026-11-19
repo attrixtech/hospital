@@ -1,5 +1,5 @@
 {{--
-  ICTHospital - role permission grid.
+  thrumble.hospital - role permission grid.
 
   The catalogue and the role columns both come from config/hospital_permissions.php
   by way of PermissionController, so nothing here has to be kept in step by hand.
@@ -8,8 +8,8 @@
   drifted apart, and it posted the accountant column under the name "accutant" so
   those grants were silently discarded.
 
-  Copyright (c) ICT Innovations <https://www.ictinnovations.com>
-  Part of ICTHospital <https://www.icthospital.com>
+  Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+  Part of thrumble.hospital
   Licensed under the GNU General Public License v3.0.
 --}}
 @extends('layouts.master')

@@ -1,19 +1,10 @@
-# ICTHospital
+# thrumble.hospital
 
-Hospital management software with unified communications built in. ICTHospital handles
+Hospital management software with unified communications built in. thrumble.hospital handles
 the day-to-day running of a hospital or clinic, and adds SMS, voice and video
 consultation so patients and clinicians can reach each other without leaving the system.
 
-Built and maintained by [ICT Vision](https://ict.vision), part of
-[ICT Innovations](https://www.ictinnovations.com).
-
-Product site: **[www.icthospital.com](https://www.icthospital.com)**
-
-## Community and Enterprise
-
-Everything in this repository is the Community edition: open source under GPL-3.0 and free to run on your own server.
-
-Enterprise is the same code, set up and looked after by our team: installation in your hospital's name and logo, support, and our communication products as add-ons with their own licences. That means ICTContact / ICTCRM for appointment calls and campaigns, and ICTDesk for live chat on your hospital website. Plans and prices are on [icthospital.com](https://www.icthospital.com/#enterprise-plans).
+Developed by [Attrix Technologies](https://www.attrixtech.com) & [Infusionn Pvt. Ltd.](https://www.infusionn.in).
 
 ---
 
@@ -23,10 +14,7 @@ Every screen a hospital needs day to day is built, tested and documented. If you
 see it rather than read about it, there is a
 **[user guide with screenshots of every screen](docs/USER-GUIDE.md)**.
 
-ICTHospital previously ran on CodeIgniter 2.2.2, which reached end of life in 2017 and
-will not run on PHP 8. Rather than patch an unsupported framework carrying patient data,
-the application was rebuilt on **Laravel 12**, sharing a foundation with our
-[ICTSchool](https://github.com/ictinnovations/ICTSchool) platform.
+thrumble.hospital is built on **Laravel 12** for PHP 8.2+.
 
 Where it stands:
 
@@ -51,7 +39,7 @@ Where it stands:
 - Hospital dashboard: patient and appointment counts, bed occupancy, clinical activity,
   income against expenses, recent patients and appointments
 - Global search across patients and doctors
-- Messaging to patients and doctors over [ICTCore](https://github.com/ictinnovations/ictcore),
+- Messaging to patients and doctors over ICTCore,
   with templates, SMS logging and notification types
 - Two scheduled jobs, `hospital:payment-reminder` and `hospital:appointment-reminder`,
   which text patients who owe money or who are due in
@@ -127,8 +115,8 @@ the seeder; the other roles start with nothing and are granted what they need on
 permissions screen. The menu hides what a role cannot open, so nobody is offered a link
 that bounces them.
 
-If you are upgrading an install that came from ICTSchool, its permission table still
-holds the old student and class rights and none of the hospital ones. Run this once
+If you are upgrading an install from a legacy schema, its permission table may still
+hold old non-hospital rights and none of the hospital ones. Run this once
 after migrating, or every role including Admin will be locked out of every screen:
 
 ```bash
@@ -163,12 +151,11 @@ the locks are exercised by MySQL and MariaDB.
 
 The clinical screens are new. They have automated coverage rather than production miles,
 and a hospital system is not the place to find out what that difference is worth. If you
-are weighing ICTHospital up for live use, please
-[get in touch](https://www.icthospital.com) so we can talk about your data and your
-migration.
+are weighing thrumble.hospital up for live use, please review your data and migration plan
+carefully.
 
 Two practical things to do first. Change the `admin` password, which ships as `123456`.
-And if you are upgrading an install that came from ICTSchool, run
+And if you are upgrading a legacy install, run
 `php artisan hospital:sync-permissions` after migrating, or every role including Admin
 will be locked out of every screen.
 
@@ -181,8 +168,6 @@ will be locked out of every screen.
 ## Installation
 
 ```bash
-git clone https://github.com/ictinnovations/ICTHospital.git
-cd ICTHospital
 composer install
 cp .env.example .env
 php artisan key:generate
@@ -253,8 +238,7 @@ regardless. A clean install is 84 tables, down from 117.
 
 ## Communications
 
-SMS and voice run through [ICTCore](https://github.com/ictinnovations/ictcore), our own
-open source communications framework, configured in Settings. Video consultation targets
+SMS and voice run through ICTCore, configured in Settings. Video consultation targets
 LiveKit. None of these are required to run the core system.
 
 Two scheduled jobs use it:
@@ -282,22 +266,10 @@ bash smoke-test.sh
 
 The current baseline is 33 pages serving, no server errors.
 
-## Related projects
-
-- [ICTSchool](https://github.com/ictinnovations/ICTSchool) - school management
-- [ICTCore](https://github.com/ictinnovations/ictcore) - communications framework
-- [ICTFax](https://github.com/ictinnovations/ictfax) - fax server on FreeSWITCH
-- [ICTDialer](https://github.com/ictinnovations/ictdialer) - auto dialer and campaigns
-- [ICTPBX Community Edition](https://github.com/ictinnovations/ictpbx-community-edition) - multi-tenant IP PBX
-
-Full list: [ictinnovations.com/projects](https://ictinnovations.com/projects/)
-
 ## Licence
 
 GNU General Public License v3.0 - see [LICENSE](LICENSE).
 
-Copyright (c) ICT Innovations.
-
 ---
 
-Developed by Tahir Almas, [ICT Innovations](https://www.ictinnovations.com).
+Developed by [Attrix Technologies](https://www.attrixtech.com) & [Infusionn Pvt. Ltd.](https://www.infusionn.in).

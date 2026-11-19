@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - remind patients who still owe money.
+ * thrumble.hospital - remind patients who still owe money.
  *
- * Replaces CronJob:cronjob and feeNotification:notification from ICTSchool, which
+ * Replaces the legacy CronJob:cronjob and feeNotification:notification, which
  * both chased unpaid monthly school fees.
  *
  * Usage: php artisan hospital:payment-reminder
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - patient registration and records.
+ * thrumble.hospital - patient registration and records.
  *
  * The patient table, model and migration came across from the CodeIgniter system
  * during the rebuild, but nothing drove them: there was no controller and no view,
@@ -8,8 +8,8 @@
  * point that the rest of the clinical modules hang off, since admissions,
  * prescriptions, lab requests and invoices all key on a patient row.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

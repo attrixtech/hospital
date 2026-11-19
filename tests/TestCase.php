@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - base test case.
+ * thrumble.hospital - base test case.
  *
  * Every clinical route now sits behind the permission catalogue, and a test
  * database built by RefreshDatabase has an empty permission table, so an Admin
@@ -11,8 +11,8 @@
  * that are about the permission system itself clear the table in their own setUp
  * and grant exactly what they mean to.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

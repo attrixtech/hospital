@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - the staff types that share one screen.
+ * thrumble.hospital - the staff types that share one screen.
  *
  * nurse, pharmacist, laboratorist, receptionist and accountant are five tables with
  * the same shape: a name, contact details, a photo and the legacy ion_user_id. Five
@@ -14,8 +14,8 @@
  * `permission` is the prefix in config/hospital_permissions.php. The catalogue has a
  * dedicated Nurse set and a general Staff set, which is why nurse differs.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

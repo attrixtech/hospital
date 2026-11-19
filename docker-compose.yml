@@ -4,9 +4,9 @@ services:
     container_name: icthosp-db
     environment:
       MARIADB_ROOT_PASSWORD: root
-      MARIADB_DATABASE: icthospital
-      MARIADB_USER: icthospital
-      MARIADB_PASSWORD: icthospital
+      MARIADB_DATABASE: thrumble_hospital
+      MARIADB_USER: thrumble_hospital
+      MARIADB_PASSWORD: thrumble_hospital
     ports:
       - "33063:3306"
     volumes:

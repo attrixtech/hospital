@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - give an invoice real line items.
+ * thrumble.hospital - give an invoice real line items.
  *
  * The last of the packed string pairs. payment.category_name holds every charge
  * on the invoice and payment.category_amount holds every price, matched by
@@ -12,8 +12,8 @@
  * single `amount_received` column, which cannot represent the normal case of a
  * patient paying a deposit now and the balance later.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - patient types, per-type price lists and fuller registration.
+ * thrumble.hospital - patient types, per-type price lists and fuller registration.
  *
  * A private hospital does not charge everyone the same. A walk-in pays the general
  * price, a patient sent by a panel company is billed at the rate agreed with that
@@ -10,8 +10,8 @@
  *
  * Every column added to a legacy table is nullable, so existing rows stay valid.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

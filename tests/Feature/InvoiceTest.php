@@ -1,12 +1,12 @@
 <?php
 /**
- * ICTHospital - invoicing feature tests.
+ * thrumble.hospital - invoicing feature tests.
  *
  * The derived settlement state and part payment are the reason the module exists
  * in this shape, so that is what most of these cover.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

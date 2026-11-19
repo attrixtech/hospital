@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - payment gateway credentials.
+ * thrumble.hospital - payment gateway credentials.
  *
  * The paymentGateway table came across from the CodeIgniter system with a model and no
  * screen, so the credentials could only be put in by editing the database directly.
@@ -14,8 +14,8 @@
  * settings page that prints an API password into the HTML puts it in every browser
  * cache and every screenshot. Leaving a secret field blank keeps the stored value.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

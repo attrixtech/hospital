@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - video visits, service kinds and packages, and hospital branches.
+ * thrumble.hospital - video visits, service kinds and packages, and hospital branches.
  *
  * Video visits: an appointment can be a video consultation with its own meeting
  * room, opened by the doctor from the queue and sent to the patient as a link.
@@ -12,11 +12,11 @@
  * Branches: one installation can run several sites. Invoices, visits and shift
  * closes are stamped with the branch they happened at, users can be tied to one
  * branch, and the busy screens show the current branch only. The existing
- * "branches" table belongs to the ICTSchool remote-branch feature, so this is a
+ * "branches" table belongs to the legacy school remote-branch feature, so this is a
  * new table.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

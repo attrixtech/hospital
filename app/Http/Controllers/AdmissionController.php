@@ -1,6 +1,6 @@
 <?php
 /**
- * ICTHospital - admissions and discharges.
+ * thrumble.hospital - admissions and discharges.
  *
  * An admission is a row in `alloted_bed`: a patient, a bed, an admit time, and a
  * discharge time that stays null until they leave. Nothing else marks a bed as
@@ -11,8 +11,8 @@
  * Two rules the original did not enforce: a bed holds one patient at a time, and
  * a patient is admitted to one bed at a time.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 

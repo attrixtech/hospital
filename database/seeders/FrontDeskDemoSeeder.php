@@ -1,14 +1,14 @@
 <?php
 /**
- * ICTHospital - demonstration data for the front desk and OPD features:
+ * thrumble.hospital - demonstration data for the front desk and OPD features:
  * patient types and panel prices, doctor share, visit fees and slots, today's
  * token queue with a consultation, radiology, and a closed shift.
  *
  * Called from DemoDataSeeder. Safe to run twice: it skips what is already there.
  * Never run on a live system.
  *
- * Copyright (c) ICT Innovations <https://www.ictinnovations.com>
- * Part of ICTHospital <https://www.icthospital.com>
+ * Copyright (c) Attrix Technologies <https://www.attrixtech.com> & Infusionn Pvt. Ltd. <https://www.infusionn.in>
+ * Part of thrumble.hospital
  * Licensed under the GNU General Public License v3.0.
  */
 
